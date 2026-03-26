@@ -12,6 +12,7 @@
 <body>
     <main>
         <nav> 
+
             <div class = "box">
                 <h1>HOBOT</h1>
 
@@ -36,20 +37,41 @@
                 <!--controla o quadrado branco-->
                 <div class= "quadrado_branco">
 
+
                     <!--div pra controlar a caixa de mensagens-->
                     <div class = "caixa_mensagem">
+                            
+                        <!--cria a caixa de mensagens e cria o id (meu texto)
+                        o placeholder cria uma mensagem fantasma que diz "Escreva sua 
+                         mensagem"-->
+                        <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
 
-                            <!--cria a caixa de mensagens e cria o id (meu texto)
-                            o placeholder cria uma mensagem fantasma que diz "Escreva sua 
-                            mensagem"-->
-                            <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
                     </div>
 
                 </div>
 
             </div>
         
+        <img src="hobot-idle-png-tcc.png" class="imagem-chat" alt="Mascote Hobot">
+
+
+        <!--container que tem as mensagens do usuario e do bot
+        (alterar futuramente conforme o código for mudando
+        agr é só pra exemplo)-->
+        <div class= "mensagens">
         
+            <div class= "mensagem_bot">
+
+            </div>
+
+            <div class= "mensagem_usuario">
+
+            </div>
+
+
+        </div>
+
+            
         </nav>
     </main>
 </body>

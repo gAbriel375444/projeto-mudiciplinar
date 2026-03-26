@@ -76,7 +76,7 @@ body{
     display: flex;
 
     /* column -> diz que vai organizar os elementos me colunas */
-    flex-direction: column;
+   /* flex-direction: column;
 
     /*alinha os elementos no centro do quadrado branco*/
     align-items: center;
@@ -94,14 +94,16 @@ body{
 #meutexto {
 
     /*Largura da caixa */
-    width: 400px;
+    width: 860px;
 
     /*altura da caixa */
     height: 25px;
 
-    /*distancia do todo do quadrado branco,
+    /*distancia do topo do quadrado branco,
     até a caixa de texto */
     margin-top: 300px;
+
+    margin-left: 10px;
 
     /*cria e colore as bordas*/
     border: 2px solid #79bafc;
@@ -120,3 +122,75 @@ body{
 
 }
 
+/*imagem do robô */
+.imagem-chat{
+
+    position: absolute;
+
+    /* Ajuste o tamanho conforme preferir */
+    width: 290px; 
+
+    height: auto;     /* Mantém a proporção */
+
+
+    margin-top: -309px; /* Dá um espaço do topo do quadrado branco */
+
+    margin-left: 76%;
+
+
+
+    z-index: 2;
+
+}
+
+
+.mensagem_bot{
+
+
+   /*cor do bg */
+    background-color: rgb(255, 0, 0);
+
+    /*posição da caixa */
+    position: relative;
+    
+    /* Largura do quadrado */
+    width: 360px;      
+    
+    height: 150px;
+
+    /*margem da esquerda */
+    margin-left: 327px;
+
+    /*margem do topo */
+    margin-top: -220px;
+    
+    /*arredonda as bordas */
+    border-radius: 10px;
+}
+
+.mensagem_usuario{
+
+
+
+   /*cor do bg */
+    background-color: rgb(8, 135, 232);
+
+    /*posição da caixa */
+    position: fixed;
+    
+    /* Largura do quadrado */
+    width: 360px;      
+    
+    height: 150px;
+
+    /*margem da esquerda */
+    margin-left: 700px;
+
+    /*margem do topo */
+    margin-top: -280px;
+    
+    /*arredonda as bordas */
+    border-radius: 10px;
+
+    z-index: 1;
+}
