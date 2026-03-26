@@ -1,0 +1,89 @@
+body{
+
+     background-color: #79bafc;
+ }
+
+.box{
+
+     text-align: center;
+
+    border: 1px, solid, black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    background-color: #f2e8fb;
+
+    color: rgb(13, 13, 14);
+    }
+
+    
+.box2{
+
+    /*alinhamento do texto */
+    text-align: left;
+
+    /*limitando a largura da caixa */
+    width: 250px;
+
+    height: 350px;
+
+    /*uso pra criar as bordas */
+    border: 1px, solid, black;
+
+
+
+    /*tamanho da caixa */
+    padding: 10px;
+
+    /*distancia da esquerda */
+    margin-bottom: 20px;
+
+    /*cor de fundo */
+    background-color: #d0c9f9;
+
+    /*cor da fonte*/
+    color: rgb(0, 0, 0);
+}
+
+.box_chat{
+
+    /*alinhamento do texto */
+    text-align: left;
+
+    /*uso pra criar as bordas */
+    border: 1px, solid, black;
+
+
+
+    /*limitando a largura da caixa */
+    width: 500px;
+
+    height: 350px;
+
+   
+
+    margin-left: 50%;
+
+    /*controla a altura da caixa
+    voltar a aqui dps pra ajustar */
+    margin-top: -389px;
+
+    /*o quanto o site desce */
+    margin-bottom: 13px;
+
+
+    
+    /*tamanho da caixa */
+    padding: 10px;
+
+    
+
+    /*cor de fundo */
+    background-color: #d0c9f9;
+
+    /*cor da fonte*/
+    color: rgb(0, 0, 0);
+
+}
