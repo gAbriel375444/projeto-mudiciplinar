@@ -81,7 +81,7 @@ body{
     /*alinha os elementos no centro do quadrado branco*/
     align-items: center;
 
-    /*cria um espaço entre os itens */
+    /*cria um espaço entre os itens
     justify-content: space-between;
 
     /* cria um "respiro de 40 px no fim do quadrado"
