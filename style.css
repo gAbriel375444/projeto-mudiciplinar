@@ -47,44 +47,76 @@ body{
     color: rgb(0, 0, 0);
 }
 
-.box_chat{
+.quadrado_branco{
 
-    /*alinhamento do texto */
-    text-align: left;
+    /*cor do bg */
+    background-color: white;
 
-    /*uso pra criar as bordas */
-    border: 1px, solid, black;
+    /*posição da caixa */
+    position: relative;
 
+   /* Altura mínima */
+    min-height: 369px;
+    
+    /* Largura do quadrado */
+    width: 910px;        
 
+    /*margem da esquerda */
+    margin-left: 25%;
 
-    /*limitando a largura da caixa */
-    width: 900px;
-
-    height: 350px;
-
+    /*margem do topo */
+    margin-top: -390px;
    
-
-    /*controla o quão pra esquerda a box vai */
-    margin-left: 310px;
-
-    /*controla a altura da caixa
-    voltar a aqui dps pra ajustar */
-    margin-top: -389px;
-
-    /*o quanto o site desce */
-    margin-bottom: 200px;
-
-
     
-    /*tamanho da caixa */
-    padding: 10px;
-
     
+    /* Flexbox para organizar o que tem dentro */
 
-    /*cor de fundo */
-    background-color: #FFFFFF;
+    /*diz que o display está aberto a mudanças
+    diferente de eu colocar fixed, por exemplo */
+    display: flex;
 
-    /*cor da fonte*/
-    color: rgb(0, 0, 0);
+    /* column -> diz que vai organizar os elementos me colunas */
+    flex-direction: column;
+
+    /*alinha os elementos no centro do quadrado branco*/
+    align-items: center;
+
+    /*cria um espaço entre os itens */
+    justify-content: space-between;
+
+    /* cria um "respiro de 40 px no fim do quadrado"
+    padding-bottom: 40px !important; */
+
 
 }
+
+/* Personalizando a caixa de texto dentro do painel */
+#meutexto {
+
+    /*Largura da caixa */
+    width: 400px;
+
+    /*altura da caixa */
+    height: 25px;
+
+    /*distancia do todo do quadrado branco,
+    até a caixa de texto */
+    margin-top: 300px;
+
+    /*cria e colore as bordas*/
+    border: 2px solid #79bafc;
+
+    /*arredonda as bordas */
+    border-radius: 10px;
+
+   /* cria uma folga de 14 pixels da borda até o conteúdo da caixa */
+    padding: 14px;
+
+    /*Tamanho da fonte */
+    font-size: 16px;
+
+    /* Impede o usuário de deformar a caixa */
+    resize: none; 
+
+}
+

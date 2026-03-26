@@ -11,26 +11,47 @@
 
 <body>
     <main>
+        <nav> 
+            <div class = "box">
+                <h1>HOBOT</h1>
 
-        <div class = "box">
-            <h1>HOBOT</h1>
+                <p>Bem vindo ao nosso site!</p>
 
-            <p>Bem vindo ao nosso site!</p>
+            </div>
 
-        </div>
+            <!--menu-->
+            <div class="box2">
 
-        <div class="box2">
+                <p>Tags de linha: <br><em>em:</em> ao colocar um texto entre essa tag,
+                    o texto ficará em itálico.</p>
 
-            <p>Tags de linha: <br><em>em:</em> ao colocar um texto entre essa tag,
-                 o texto ficará em itálico.</p>
-
-        </div>
-
-        <div class = "box_chat">
+            </div>
 
 
-        </div>
+            <!--uma div pra controlar o quadrado branco e a caixa texto
+            serve como um conteirner
+            sem ela não posso acessar a posição de um sem alterar o outro-->
+            <div class = "box_chat"> 
 
+
+                <!--controla o quadrado branco-->
+                <div class= "quadrado_branco">
+
+                    <!--div pra controlar a caixa de mensagens-->
+                    <div class = "caixa_mensagem">
+
+                            <!--cria a caixa de mensagens e cria o id (meu texto)
+                            o placeholder cria uma mensagem fantasma que diz "Escreva sua 
+                            mensagem"-->
+                            <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        
+        </nav>
     </main>
 </body>
 </html>
