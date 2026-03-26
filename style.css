@@ -1,6 +1,6 @@
 body{
 
-     background-color: #79bafc;
+     background-color: #46469d;
  }
 
 .box{
@@ -13,7 +13,7 @@ body{
 
     margin-bottom: 20px;
 
-    background-color: #f2e8fb;
+    background-color: #d0c9f9;
 
     color: rgb(13, 13, 14);
     }
@@ -72,7 +72,7 @@ body{
     margin-top: -389px;
 
     /*o quanto o site desce */
-    margin-bottom: 13px;
+    margin-bottom: 200px;
 
 
     
@@ -82,7 +82,7 @@ body{
     
 
     /*cor de fundo */
-    background-color: #d0c9f9;
+    background-color: #FFFFFF;
 
     /*cor da fonte*/
     color: rgb(0, 0, 0);
