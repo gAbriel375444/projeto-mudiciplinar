@@ -58,13 +58,14 @@ body{
 
 
     /*limitando a largura da caixa */
-    width: 500px;
+    width: 900px;
 
     height: 350px;
 
    
 
-    margin-left: 50%;
+    /*controla o quão pra esquerda a box vai */
+    margin-left: 310px;
 
     /*controla a altura da caixa
     voltar a aqui dps pra ajustar */
