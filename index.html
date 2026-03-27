@@ -10,6 +10,7 @@
 <link rel = "stylesheet" href = "style.css">
 
 <body>
+<section>
     <main>
         <div class = "box">
             <h1>HOBOT</h1>
@@ -23,10 +24,13 @@
              <!--menu-->
             <div class="box2">
 
-                <h3>Menu</h3>
+                
+                <h3 class="menu_texto">
+                Menu
                 <p>Sobre --</p>
                 <p>Hobbies</p>
                 <p>Jogos --</p>
+                </h3>
 
             </div>
         </nav>
@@ -37,55 +41,64 @@
             <!--uma div pra controlar o quadrado branco e a caixa texto
             serve como um conteirner
             sem ela não posso acessar a posição de um sem alterar o outro-->
-            <div class = "conteirner"> 
+    <div class = "conteirner"> 
 
 
                 <!--controla o quadrado branco-->
-                <div class= "quadrado_branco">
+        <div class= "quadrado_branco">
 
 
                     <!--div pra controlar a caixa de mensagens-->
-                    <div class = "caixa_mensagem">
+            <div class = "caixa_mensagem">
                             
                         <!--cria a caixa de mensagens e cria o id (meu texto)
                         o placeholder cria uma mensagem fantasma que diz "Escreva sua 
                          mensagem"-->
-                        <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
-
-                    </div>
-
-                </div>
+                <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
 
             </div>
+
+        </div>
+
+    </div>
         
-        <img src="hobot-idle-png-tcc.png" class="imagem-chat" alt="Mascote Hobot">
+    <img src="hobot-idle-png-tcc.png" class="imagem-chat" alt="Mascote Hobot">
 
 
         <!--container que tem as mensagens do usuario e do bot
         (alterar futuramente conforme o código for mudando
         agr é só pra exemplo)-->
-        <div class= "mensagens">
+<div class= "mensagens">
         
-            <div class= "mensagem_bot">
+    <div class= "mensagem_bot">
 
 
-            </div>
+    </div>
 
-            <div class= "mensagem_usuario">
+    <div class= "mensagem_usuario">
           
 
-            </div>
+            
+    </div>
        
-        </div>
-
-      
-
-        <!--caixa do rodapé-->
-        <div class= "rodape_box">
-
-        </div>
+</div>
 
 
-    </main>
+
+
+</section>
+
+<footer class ="foot">
+    
+    <!--caixa do rodapé-->
+    <div class= "@AMNAH E SABADOO">
+        <h3 class="contato"> Contato: Empresahobot@gmail.com
+
+            <p >© Hobot - 2026</p>
+        </h3>
+    </div>
+
+    
+</footer>
 </body>
 </html>
