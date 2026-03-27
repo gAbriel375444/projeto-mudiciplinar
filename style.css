@@ -30,7 +30,7 @@ body{
     height: 350px;
 
     /*uso pra criar as bordas */
-    border: 1px, solid, black;
+    border: 1px solid black;
 
 
 
@@ -48,6 +48,11 @@ body{
     /*cor da fonte*/
     color: rgb(0, 0, 0);
 }
+
+.menu_texto{
+
+    color: rgb(0, 0, 0);}
+
 
 .quadrado_branco{
 
@@ -166,6 +171,9 @@ body{
     /*margem do topo */
     margin-top: -220px;
     
+    /*uso pra criar as bordas */
+    border: 2px solid rgb(66, 0, 117);
+
     /*arredonda as bordas */
     border-radius: 10px;
 }
@@ -191,6 +199,9 @@ body{
     /*margem do topo */
     margin-top: -280px;
     
+    /*uso pra criar as bordas */
+    border: 2px solid rgb(0, 12, 117);
+
     /*arredonda as bordas */
     border-radius: 10px;
 
@@ -245,12 +256,12 @@ body{
 }
 
 
-    .Contato{
+.contato{
 
-        color: aliceblue;
+    color: aliceblue;
 
-        margin-top: -15px;
+    margin-top: -15px;
     
-    }
+}
 
 
