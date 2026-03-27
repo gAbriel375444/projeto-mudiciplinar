@@ -148,7 +148,7 @@ body{
 
 
    /*cor do bg */
-    background-color: rgb(255, 0, 0);
+    background-color: #8772ff;
 
     /*posição da caixa */
     position: relative;
@@ -194,3 +194,36 @@ body{
 
     z-index: 1;
 }
+
+.h3_mensagem1{
+
+    position: fixed;
+
+     /* Largura do quadrado */
+    width: 360px;      
+    
+    height: 150px;
+
+    /*margem da esquerda */
+    margin-left: 340px;
+
+    /*margem do topo */
+    margin-top: -160px;
+}
+
+.h3_mensagem2{
+
+    position: fixed;
+
+     /* Largura do quadrado */
+    width: 360px;      
+    
+    height: 150px;
+
+    /*margem da esquerda */
+    margin-left: 340px;
+
+    /*margem do topo */
+    margin-top: -160px;
+}
+
