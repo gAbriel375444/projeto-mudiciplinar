@@ -155,7 +155,6 @@ body{
 
 .mensagem_bot{
 
-
    /*cor do bg */
     background-color: #8772ff;
 
@@ -291,7 +290,7 @@ body{
     text-align: left;
 
     /*limitando a largura da caixa */
-    width: 250px;
+    width: 250 * 3px;
 
     height: 350px;
 
@@ -314,5 +313,31 @@ body{
     /*cor da fonte*/
     color: rgb(0, 0, 0);
 
+
+}
+
+.hobby1{
+    /*cor do bg */
+    background-color: #8772ff;
+
+    /*posição da caixa */
+    position: relative;
+
+    /* Largura do quadrado */
+    width: 180px;      
+
+    height: 150px;
+
+    /*margem da esquerda */
+    margin-left: 10px;
+
+    /*margem do topo */
+    margin-top: -380px;
+
+    /*uso pra criar as bordas */
+    border: 2px solid rgb(66, 0, 117);
+
+    /*arredonda as bordas */
+    border-radius: 10px;
 
 }
