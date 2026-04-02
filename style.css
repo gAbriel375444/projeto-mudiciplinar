@@ -1,3 +1,5 @@
+
+/* index css */
 body{
 
      background-color: #46469d;
@@ -265,3 +267,52 @@ body{
 }
 
 
+/*style hobbies */
+.cabeçario_aba_hobbies{
+
+    text-align: center;
+
+    border: 1px, solid, black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    background-color: #d0c9f9;
+
+    color: rgb(13, 13, 14);
+
+}
+
+
+.mural_hobbies{
+
+    /*alinhamento do texto */
+    text-align: left;
+
+    /*limitando a largura da caixa */
+    width: 250px;
+
+    height: 350px;
+
+    /*uso pra criar as bordas */
+    border: 1px solid black;
+
+
+
+    /*tamanho da caixa */
+    padding: 10px;
+
+    /*distancia da esquerda */
+    margin-bottom: 20px;
+
+
+
+    /*cor de fundo */
+    background-color: #d0c9f9;
+
+    /*cor da fonte*/
+    color: rgb(0, 0, 0);
+
+
+}
