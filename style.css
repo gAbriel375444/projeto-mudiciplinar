@@ -320,8 +320,12 @@ body{
     /*cor do bg */
     background-color: #8772ff;
 
+    display: flex;
+
     /*posição da caixa */
     position: relative;
+
+    cursor: pointer;
 
     /* Largura do quadrado */
     width: 180px;      
@@ -340,4 +344,10 @@ body{
     /*arredonda as bordas */
     border-radius: 10px;
 
+}
+
+.hobby1:hover{
+
+    width: 300px;
+    transition: 1s;
 }
