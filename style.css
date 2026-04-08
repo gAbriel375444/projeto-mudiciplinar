@@ -151,30 +151,30 @@ body{
 }
 
 
-.mensagem_bot{
+/*.mensagem_bot{
 
 
-   /*cor do bg */
+   /*cor do bg 
     background-color: #8772ff;
 
-    /*posição da caixa */
+    /*posição da caixa 
     position: relative;
     
-    /* Largura do quadrado */
+    /* Largura do quadrado 
     width: 360px;      
     
     height: 150px;
 
-    /*margem da esquerda */
+    /*margem da esquerda 
     margin-left: 327px;
 
-    /*margem do topo */
+    /*margem do topo 
     margin-top: -220px;
     
-    /*uso pra criar as bordas */
+    /*uso pra criar as bordas 
     border: 2px solid rgb(66, 0, 117);
 
-    /*arredonda as bordas */
+    /*arredonda as bordas 
     border-radius: 10px;
 }
 
@@ -182,31 +182,32 @@ body{
 
 
 
-   /*cor do bg */
+   /*cor do bg 
     background-color: rgb(8, 135, 232);
 
-    /*posição da caixa */
+    /*posição da caixa 
     position: relative;
     
-    /* Largura do quadrado */
+    /* Largura do quadrado 
     width: 360px;      
     
     height: 150px;
 
-    /*margem da esquerda */
+    /*margem da esquerda 
     margin-left: 700px;
 
-    /*margem do topo */
+    /*margem do topo 
     margin-top: -280px;
     
-    /*uso pra criar as bordas */
+    /*uso pra criar as bordas 
     border: 2px solid rgb(0, 12, 117);
 
-    /*arredonda as bordas */
+    /*arredonda as bordas 
     border-radius: 10px;
 
     z-index: 1;
 }
+*/
 
 .h3_mensagem1{
 
