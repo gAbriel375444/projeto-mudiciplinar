@@ -56,8 +56,9 @@
                         <!--cria a caixa de mensagens e cria o id (meu texto)
                         o placeholder cria uma mensagem fantasma que diz "Escreva sua 
                          mensagem"-->
-                <textarea placeholder="Escreva sua mensagem..."  id="meutexto"></textarea>
+                <textarea placeholder="Escreva sua mensagem..."  id="meu_texto"></textarea>
 
+                
             </div>
 
         </div>
@@ -69,25 +70,27 @@
 
         <!--container que tem as mensagens do usuario e do bot
         (alterar futuramente conforme o código for mudando
-        agr é só pra exemplo)-->
-<div class= "mensagens">
-        
-    <div class= "mensagem_bot">
+        agr é só pra exemplo)
+        <div class= "mensagens">
+                
+            <div class= "mensagem_bot">
 
 
-    </div>
+            </div>
 
-    <div class= "mensagem_usuario">
-          
-
+            <div class= "mensagem_usuario">
             
-    </div>
+          
+        </div>
+            -->
        
-</div>
 
+        <!--botão de enviar mensagem, um teste por enquanto-->
+        <button id="enviar_mensagem">Enviar</button>;
 
+        <p id = "resposta"></p>
 
-
+    </main>
 </section>
 
 <footer class ="foot">
@@ -102,5 +105,9 @@
 
     
 </footer>
+
+<!--liga o java com o html-->
+<script src="script.js"></script>
+
 </body>
 </html>
