@@ -12,7 +12,7 @@ let botao_enviar_mensagem = document.getElementById("enviar_mensagem");
 botao_enviar_mensagem.addEventListener("click", function () {
     
     //pego id do meu texto e salvo numa var
-    const input = document.getElementById("meu_texto").value.toLowerCase();
+    const input = document.getElementById("meu_texto").value.trim().toLowerCase();
 
     //no meu index, criei um p para aparecer a resposta na tela
     //aqui estou pegando o id desse <p> 
