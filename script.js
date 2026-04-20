@@ -1,12 +1,12 @@
 // dicionário de respostas (agora usando palavras-chave para cada cenário)
 const respostas = {
 
-     "saudacao2":{
+     "saudacao":{
         "chaves":    ["oi, tudo bem com voce?"],
         "resposta":  "Oi, por aqui tá tudo bem. E você como está?"
     },
 
-    "saudacao": {
+    "saudacao2": {
         "chaves":   ["oi", "ola", "hey", "salve", "opa"],
         "resposta": "Oi, tudo bem com você?"
     },
