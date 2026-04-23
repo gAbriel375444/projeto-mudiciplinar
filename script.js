@@ -64,7 +64,7 @@ function processUserInput() {
     // Efeito de "O conselheiro está pensando..."
     const typingIndicator = document.createElement("div");
     typingIndicator.className = "typing";
-    typingIndicator.innerText = "O conselheiro está digitando...";
+    typingIndicator.innerText = "O Hobot está digitando...";
     chatOutput.appendChild(typingIndicator);
 
     setTimeout(() => {
