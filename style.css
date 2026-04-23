@@ -33,7 +33,6 @@ body{
     border: 1px solid black;
 
 
-
     /*tamanho da caixa */
     padding: 10px;
 
@@ -54,195 +53,54 @@ body{
     color: rgb(0, 0, 0);}
 
 
-.quadrado_branco{
+/*
 
-    /*cor do bg */
-    background-color: white;
-
-    /*posição da caixa */
-    position: relative;
-
-   /* Altura mínima */
-    min-height: 369px;
-    
-    /* Largura do quadrado */
-    width: 910px;        
-
-    /*margem da esquerda */
-    margin-left: 25%;
-
-    /*margem do topo */
-    margin-top: -390px;
-   
-    
-    
-    /* Flexbox para organizar o que tem dentro */
-
-    /*diz que o display está aberto a mudanças
-    diferente de eu colocar fixed, por exemplo */
+/* Organiza o menu e o chat lado a lado */
+.conteudo-principal {
     display: flex;
-
-    /* column -> diz que vai organizar os elementos me colunas */
-   /* flex-direction: column;
-
-    /*alinha os elementos no centro do quadrado branco*/
-    align-items: center;
-
-    /*cria um espaço entre os itens
-    justify-content: space-between;
-
-    /* cria um "respiro de 40 px no fim do quadrado"
-    padding-bottom: 40px !important; */
-
-
+    justify-content: flex-start; /* Alinha tudo à esquerda */
+    align-items: flex-start;     /* Mantém o topo alinhado */
+    gap: 40px;                   /* Espaço entre o menu e o chat */
+    padding-left: 0px;          /* Espaço da borda esquerda da tela */
+    width: 100%;
 }
 
-/* Personalizando a caixa de texto dentro do painel */
-#meu_texto {
-
-    /*Largura da caixa */
-    width: 860px;
-
-    /*altura da caixa */
-    height: 25px;
-
-    /*distancia do topo do quadrado branco,
-    até a caixa de texto */
-    margin-top: 300px;
-
-    margin-left: 10px;
-
-    /*cria e colore as bordas*/
-    border: 2px solid #79bafc;
-
-    /*arredonda as bordas */
-    border-radius: 10px;
-
-   /* cria uma folga de 14 pixels da borda até o conteúdo da caixa */
-    padding: 14px;
-
-    /*Tamanho da fonte */
-    font-size: 16px;
-
-    /* Impede o usuário de deformar a caixa */
-    resize: none; 
-
+.box2 {
+    width: 250px;   /* Largura do seu menu lateral */
+    flex-shrink: 0; /* Impede o menu de ser "esmagado" */
 }
 
-/*imagem do robô */
+#chat-container {
+    flex-grow: 1;      /* O chat vai crescer até o final da tela */
+    max-width: 910px;  /* Mas não vai ficar largo demais */
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 372px;
+    overflow: hidden;
+}
+
+
+
 .imagem-chat{
 
     position: absolute;
 
-    /* Ajuste o tamanho conforme preferir */
+    /*Ajuste o tamanho conforme preferir */
     width: 290px; 
 
     height: auto;     /* Mantém a proporção */
 
 
-    margin-top: -309px; /* Dá um espaço do topo do quadrado branco */
+    top: 241px;
 
-    margin-left: 76%;
-
-
+    right: 10px;
 
     z-index: 2;
 
 }
 
-
-/*.mensagem_bot{
-
-
-   /*cor do bg 
-    background-color: #8772ff;
-
-    /*posição da caixa 
-    position: relative;
-    
-    /* Largura do quadrado 
-    width: 360px;      
-    
-    height: 150px;
-
-    /*margem da esquerda 
-    margin-left: 327px;
-
-    /*margem do topo 
-    margin-top: -220px;
-    
-    /*uso pra criar as bordas 
-    border: 2px solid rgb(66, 0, 117);
-
-    /*arredonda as bordas 
-    border-radius: 10px;
-}
-
-.mensagem_usuario{
-
-
-
-   /*cor do bg 
-    background-color: rgb(8, 135, 232);
-
-    /*posição da caixa 
-    position: relative;
-    
-    /* Largura do quadrado 
-    width: 360px;      
-    
-    height: 150px;
-
-    /*margem da esquerda 
-    margin-left: 700px;
-
-    /*margem do topo 
-    margin-top: -280px;
-    
-    /*uso pra criar as bordas 
-    border: 2px solid rgb(0, 12, 117);
-
-    /*arredonda as bordas 
-    border-radius: 10px;
-
-    z-index: 1;
-}
-*/
-
-.h3_mensagem1{
-
-    position: fixed;
-
-     /* Largura do quadrado */
-    width: 360px;      
-    
-    height: 150px;
-
-    /*margem da esquerda */
-    margin-left: 340px;
-
-    /*margem do topo */
-    margin-top: -160px;
-    
-}
-
-.h3_mensagem2{
-
-    position: fixed;
-
-     /* Largura do quadrado */
-    width: 360px;      
-    
-    height: 150px;
-
-    /*margem da esquerda */
-    margin-left: 713px;
-
-    /*margem do topo */
-    margin-top: -280px;
-
-    z-index: 2;
-}
 
 
 .foot{
@@ -266,3 +124,102 @@ body{
 }
 
 
+
+
+/* Ajuste o container das mensagens (o retângulo branco) */
+#chat-output {
+    height: 350px; /* Ajuste conforme o tamanho do seu retângulo */
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white; /* Garante que o fundo seja branco */
+    box-sizing: border-box; /* Importante para o padding não aumentar a largura */
+}
+
+.msg {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    font-size: 14px;
+    word-wrap: break-word; /* Evita que o texto saia do retângulo */
+}
+
+.user-msg {
+    align-self: flex-start;
+    background-color: #6c5ce7;
+    color: white;
+
+    /* Cantos: Superior-Esq, Superior-Dir, Inferior-Dir, Inferior-Esq */
+    border-radius: 18px 18px 18px 2px; /* O '2px' no final cria a cauda na esquerda */
+
+    max-width: 40%;          /* Faz o balão ocupar no máximo 60% do espaço */
+    width: fit-content;      /* Faz o balão se ajustar apenas ao tamanho do texto */
+    word-wrap: break-word;   /* Garante que o texto quebre linha se for longo */
+}
+
+.bot-msg {
+    align-self: flex-end;
+    background-color: #6b86f5;
+    color: #ffffff;
+
+    /* Cantos: Superior-Esq, Superior-Dir, Inferior-Dir, Inferior-Esq */
+    border-radius: 18px 18px 2px 18px; /* O '2px' aqui cria a cauda na direita */
+
+    max-width: 40%;          /* Faz o balão ocupar no máximo 60% do espaço */
+    width: fit-content;      /* Faz o balão se ajustar apenas ao tamanho do texto */
+    word-wrap: break-word;   /* Garante que o texto quebre linha se for longo *//* Ajuste aqui: */
+    margin-right: 200px; /* Valor pequeno para não esmagar o texto */
+    max-width: 40%;     /* Garante que o balão não ocupe a largura toda */
+    word-wrap: break-word;   /* Garante que o texto quebre linha se for longo */
+}
+
+
+/* Primeiro, garanta que a área que segura o input use 100% da largura do chat */
+#input-area {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box; /* Impede que a caixa saia do retângulo branco */
+    background-color: white;
+}
+
+/* Agora, faça o campo de texto crescer */
+#user-input {
+    flex: 1;            /* Esta é a linha mágica que aumenta a largura! */
+    padding: 12px;      /* Aumenta a altura interna para ficar mais fácil de clicar */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Deixa as pontas levemente arredondadas */
+    outline: none;      /* Tira aquela borda azul padrão ao clicar */
+}
+
+/* Opcional: dê um espaço entre a caixa e o botão */
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.typing {
+    
+    /* Mantém o estilo de balão do bot */
+    align-self: flex-end;    /* Joga para a direita, perto do robô */
+    background-color: #f1f2f6;
+    color: #a4b0be;          /* Um cinza mais claro para diferenciar de uma fala real */
+    
+    /* Estilo de balão e "cauda" na direita */
+    padding: 8px 12px;
+    border-radius: 15px 15px 2px 15px; 
+    border: 1px solid #e1e1e1;
+    
+    /* Detalhes do texto */
+    font-size: 14px;
+    margin-right: 200px;      /* Alinhado com a margem das mensagens do bot */
+    margin-bottom: 10px;
+    
+    display: inline-block;   /* Garante que o balão só tenha o tamanho do texto */
+    max-width: fit-content;
+}

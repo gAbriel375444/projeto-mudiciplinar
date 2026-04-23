@@ -1,61 +1,83 @@
-// dicionário de respostas (agora usando palavras-chave para cada cenário)
-const respostas = {
+const chatOutput = document.getElementById("chat-output");
+const userInput = document.getElementById("user-input");
 
-     "saudacao":{
-        "chaves":    ["oi, tudo bem com voce?"],
-        "resposta":  "Oi, por aqui tá tudo bem. E você como está?"
-    },
+// Banco de respostas empáticas
+const conselhos = {
+    tristeza: [
+        "Sinto muito que você esteja passando por isso. É normal se sentir assim às vezes.",
+        "Respire fundo. Você não precisa resolver tudo hoje. Quer me contar mais sobre o que aconteceu?",
+        "Estou aqui te ouvindo. Chorar ou ficar triste faz parte do processo de cura, não se cobre tanto."
+    ],
+    solidao: [
+        "A solidão dói, mas saiba que você não está falando sozinho agora. Eu estou aqui.",
+        "Às vezes nos sentimos sós mesmo rodeados de gente. O que você acha que ajudaria a confortar seu coração agora?"
+    ],
+    ansiedade: [
+        "Tente focar no agora. O que você consegue ver e ouvir ao seu redor?",
+        "Seus pensamentos estão acelerados? Lembre-se: pensamentos não são fatos. Vai passar."
+    ],
+    apoio: [
+        "Você é mais forte do que imagina, mesmo nos dias em que não acredita nisso.",
+        "Um passo de cada vez. O que você gostaria de fazer por você hoje, mesmo que seja algo pequeno?"
+    ],
+    fallback: "Entendo... continue falando, estou te ouvindo com atenção."};
 
-    "saudacao2": {
-        "chaves":   ["oi", "ola", "hey", "salve", "opa"],
-        "resposta": "Oi, tudo bem com você?"
-    },
+function displayMessage(role, text) {
+    const msgDiv = document.createElement("div");
+    msgDiv.className = role === "user" ? "msg user-msg" : "msg bot-msg";
+    msgDiv.innerHTML = text;
+    chatOutput.appendChild(msgDiv);
+    chatOutput.scrollTop = chatOutput.scrollHeight;}
 
-   
-    "bem_estar": {
-        "chaves":    ["tudo bem", "como vai", "tudo bom"],
-        "resposta":  "Que bom! Quer conversar sobre algo?"
-    },
-    "tristeza": { // Adicionei um novo cenário como exemplo
-        "chaves":     ["triste", "mal", "bad", "deprimido"],
-        "resposta":   "Sinto muito por isso. Quer me contar o que aconteceu?"
+function getBotResponse(input) {
+    const text = input.toLowerCase();
+
+    // Detecção de Tristeza profunda/Desânimo
+    if (["triste", "mal", "ruim", "chorando", "choro", "sofrer", "desanimado", "deprimido"].some(w => text.includes(w))) {
+        return conselhos.tristeza[Math.floor(Math.random() * conselhos.tristeza.length)];
     }
+
+    // Detecção de Solidão
+    if (["sozinho", "sozinha", "solitário", "ninguém", "só"].some(w => text.includes(w))) {
+        return conselhos.solidao[Math.floor(Math.random() * conselhos.solidao.length)];
+    }
+
+    // Detecção de Ansiedade/Medo
+    if (["medo", "ansioso", "ansiosa", "preocupado", "preocupada", "pânico"].some(w => text.includes(w))) {
+        return conselhos.ansiedade[Math.floor(Math.random() * conselhos.ansiedade.length)];
+    }
+
+    // Agradecimento ou melhora
+    if (["obrigado", "obrigada", "ajudou", "melhor"].some(w => text.includes(w))) {
+        return "Fico muito feliz em saber que pude ajudar um pouquinho. Saiba que você é importante! ❤️";
+    }
+
+    return conselhos.fallback;}
+
+function processUserInput() {
+    const message = userInput.value.trim();
+    if (!message) return;
+
+    displayMessage("user", message);
+    userInput.value = "";
+
+    // Efeito de "O conselheiro está pensando..."
+    const typingIndicator = document.createElement("div");
+    typingIndicator.className = "typing";
+    typingIndicator.innerText = "O conselheiro está digitando...";
+    chatOutput.appendChild(typingIndicator);
+
+    setTimeout(() => {
+        typingIndicator.remove();
+        const botReply = getBotResponse(message);
+        displayMessage("bot", botReply);
+    }, 3200); }
+
+userInput.addEventListener("keyup", (e) => { if (e.key === "Enter") processUserInput(); });
+
+// Mensagem inicial acolhedora
+window.onload = () => {
+    setTimeout(() => {
+        displayMessage("bot", "Oi... percebi que você veio até aqui. Como está o seu coração hoje? Se quiser desabafar, sou todo ouvidos. ");
+    }, 3200);
 };
-
-//botão para enviar a mensagem
-let botao_enviar_mensagem = document.getElementById("enviar_mensagem");
-
-//ao clicar no botão
-botao_enviar_mensagem.addEventListener("click", function () {
-    
-    //pego id do meu texto e salvo numa var
-    //adicionei o normalize para ele ignorar acentos (ex: Olá e Ola viram o mesmo)
-    const input = document.getElementById("meu_texto").value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
-    //no meu index, criei um p para aparecer a resposta na tela
-    const respostaElemento = document.getElementById("resposta");
-
-    // Variável para controlar se encontramos uma resposta
-    let respostaEncontrada = null;
-
-    // Em vez de checar a chave exata, percorremos o dicionário procurando palavras-chave
-    for (let categoria in respostas) {
-        // Verificamos se alguma das palavras-chave daquela categoria está na frase digitada
-        const temPalavraChave = respostas[categoria].chaves.some(palavra => input.includes(palavra));
-        
-        if (temPalavraChave) {
-            respostaEncontrada = respostas[categoria].resposta;
-            break; // Para o loop assim que encontrar a primeira resposta
-        }
-    }
-
-    // Se a resposta encontrada for válida
-    if (respostaEncontrada) {
-        //ele escreve a resposta correspondente 
-        respostaElemento.innerText = respostaEncontrada;
-    } 
-    else {
-        //ele retorna isso
-        respostaElemento.innerText = "Não entendi a pergunta.";
-    }
-});
