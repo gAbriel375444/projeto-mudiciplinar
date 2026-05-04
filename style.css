@@ -82,16 +82,15 @@ body{
 }
 
 
-
+/*
 .imagem-chat{
 
     position: absolute;
 
-    /*Ajuste o tamanho conforme preferir */
+    /*Ajuste o tamanho conforme preferir 
     width: 290px; 
 
-    height: auto;     /* Mantém a proporção */
-
+    height: auto;     /* Mantém a proporção 
 
     top: 241px;
 
@@ -99,7 +98,37 @@ body{
 
     z-index: 2;
 
+    
 }
+*/
+
+
+
+/* Base do Robô - Aqui fica o que não muda nunca */
+.hobot {
+    position: absolute;
+    top: 271px;
+    right: 25px;;
+    height: 232px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    scale: 1.3;
+}
+
+/* Quando o robô estiver parado (IDLE) */
+.hobot.idle {
+    width: calc(5568px / 24); /* Exemplo: largura total / nº de quadros */
+    background: url('animacoes_e_imagens/hobot_spr-Sheet-Idle.png');
+    animation: animar-idle 6s steps(24) infinite;
+}
+
+/* Keyframes específicos para cada tira de imagem */
+@keyframes animar-idle {
+    0% { background-position: 0; }
+    100% { background-position: -5568px; } /* Largura total da imagem idle */
+}
+
+
 
 
 
