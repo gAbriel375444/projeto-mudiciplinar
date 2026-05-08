@@ -37,7 +37,7 @@ function getBotResponse(input) {
         return conselhos.tristeza[Math.floor(Math.random() * conselhos.tristeza.length)];
     }
 
-    // Detecção de Solidão
+    // Detecção de Solidãoz
     if (["sozinho", "sozinha", "solitário", "ninguém", "só"].some(w => text.includes(w))) {
         return conselhos.solidao[Math.floor(Math.random() * conselhos.solidao.length)];
     }
