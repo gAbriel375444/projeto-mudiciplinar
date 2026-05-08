@@ -2,7 +2,11 @@ body{
 
     /* background-color: #46469d; */
 
-    background-image: linear-gradient(90deg,rgba(70, 70, 157, 1) 21%, rgba(122, 122, 194, 1) 100%);;
+    background-image: linear-gradient(90deg,rgba(70, 70, 157, 1) 21%, rgba(122, 122, 194, 1) 100%);
+
+    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+    
+    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
  }
 
 .box{
@@ -26,56 +30,7 @@ body{
     }
 
     
-.box2{
 
-    /*alinhamento do texto */
-    text-align: left;
-
-    /*limitando a largura da caixa */
-    width: 250px;
-
-    height: 350px;
-
-    /*uso pra criar as bordas */
-    border: 1px solid black;
-
-    border-radius: 1px 15px 15px 1px;
-
-   
-
-
-    /*tamanho da caixa */
-    padding: 10px;
-
-    /*distancia da esquerda */
-    margin-bottom: 20px;
-
-    
-    background-image: linear-gradient(270deg,rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%); 
-
-    /*cor de fundo */
-    /* background-color: #d0c9f9; */
-
-    /*cor da fonte*/
-    color: rgb(0, 0, 0);
-}
-
-/* sobre, hobbys, etc */
-.conteudo_menu_texto{
-
-    color: rgb(0, 0, 0);
-}
-
-
-/* texto "menu" */
-.menu_texto{
-
-
-    color: rgb(0, 0, 0);
-
-    margin-left: 80px;
-
-}
 
 /* Organiza o menu e o chat lado a lado */
 .conteudo-principal {
@@ -255,26 +210,68 @@ button {
 }
 
 
+/* MENU */
+.box2{
+
+  
+    text-align: left; /*alinhamento do texto */
+    width: 250px;  /*limitando a largura da caixa */
+    height: 350px;
+    border: 1px solid black;  /*uso pra criar as bordas */
+    border-radius: 1px 15px 15px 1px;
+    padding: 10px; /*tamanho da caixa */
+    margin-bottom: 20px; /*distancia da esquerda */ 
+
+    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
+
+
+    /*cor de fundo */
+    background-image: linear-gradient(270deg,rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%); 
+    
+    color: rgb(0, 0, 0); /*cor da fonte*/
+}
+
+/* sobre, hobbys, etc */
+.conteudo_menu_texto{
+
+    color: rgb(0, 0, 0);
+    margin-top: 20px; /* Dá um espaço acima da palavra Hobbies */
+}
+
+
+/* texto "menu" */
+.menu_texto{
+
+    color: rgb(0, 0, 0);
+    margin-left: 80px;
+
+}
+
+
 /* personalizando o sobre (sobre) */
 summary {
-    /* mudando a posição */
-    position: absolute;
-    top: 250px;
 
+    /* mudando a posição */
     cursor: pointer;
     font-weight: bold;
     list-style: none; /* Remove a setinha padrão se preferir */
+
+    /* margin-bottom: 10px; Isso dá espaço entre o título e o texto que vai abrir */
+
   }
 
 /* personalizando o texto do sobre (menu) */
 details p {
 
-    position: relative;
+    
     top: 50px;
     max-height: 200px;    /*Define a altura máxima antes de aparecer a barra */
     overflow-y: auto;     /* Cria a barra de rolagem vertical se o texto for grande */
     padding: 10px;        /* Espaço interno para o texto não colar na borda */
     border: 1px solid #ddd; /* Opcional: apenas para delimitar a área do texto */
     background: #fff;     /* Opcional: fundo branco para o texto */
-  }
+
+    margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
+}
 
