@@ -224,21 +224,39 @@ button {
 
     overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
     overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
-
-    /* Esconde a barra para Chrome, Safari e novas versões do Edge */
-    :-webkit-scrollbar {
-    display: none;}
+ 
 
     -ms-overflow-style: none;  /* IE e Edge antigo */
     scrollbar-width: none;     /* Firefox */
-
+        
     
 
     /*cor de fundo */
-    background-image: linear-gradient(270deg,rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%); 
-    
+    /* background-image: linear-gradient(270deg,rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%);  */
+   
+    background-image: 
+    linear-gradient(77deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%), /* Gradiente 2 */
+    linear-gradient(270deg, rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%); /* Gradiente 1 */
+   
+
+   /* Aqui está o segredo: */
+    /* O primeiro ocupa 100% da largura e 60px de altura */
+    /* O segundo ocupa 100% da largura e o resto da altura */
+    background-size: 100% 60px, 100% 100%;
+
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+
     color: rgb(0, 0, 0); /*cor da fonte*/
 }
+
+
+/* Esconde a barra para Chrome, Safari e novas versões do Edge */
+/* O seletor de esconder a barra deve ficar separado assim: */
+.box2::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* sobre, hobbys, etc */
 .conteudo_menu_texto{
@@ -253,7 +271,6 @@ button {
 
     color: rgb(0, 0, 0);
     margin-left: 80px;
-
 }
 
 
