@@ -279,7 +279,7 @@ parte de baixo*/
 
     color: rgb(0, 0, 0);
     margin-left: 10px;
-    margin-top: 20px; /* Dá um espaço acima da palavra Hobbies */
+    margin-top: 20px; /* Dá um espaço acima do sobre nós */
 }
 
 
@@ -328,7 +328,9 @@ details p {
     overflow-y: auto;     /* Cria a barra de rolagem vertical se o texto for grande */
     padding: 10px;        /* Espaço interno para o texto não colar na borda */
     border: 1px solid #330264; /* Opcional: apenas para delimitar a área do texto */
-    background: #eed4ff;     /* Opcional: fundo branco para o texto */
+    /* background: #eed4ff;     Opcional: fundo branco para o texto */
+    background: linear-gradient(90deg,rgba(201, 153, 255, 1) 18%, rgba(228, 217, 255, 1) 73%);
+
 
     margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
 }
@@ -336,6 +338,7 @@ details p {
 
 
 a {
+    
     color: #000000;          /* Cor azul personalizada */
     text-decoration: none;   /* Remove o sublinhado padrão */
     font-weight: bold;       /* Deixa o texto em negrito */
