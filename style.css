@@ -338,7 +338,8 @@ details p {
 
 
 a {
-    
+    position: relative;
+    top: 10px;
     color: #000000;          /* Cor azul personalizada */
     text-decoration: none;   /* Remove o sublinhado padrão */
     font-weight: bold;       /* Deixa o texto em negrito */
