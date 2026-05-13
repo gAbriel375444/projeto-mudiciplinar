@@ -307,6 +307,13 @@ summary::after {
   transition: transform 0.3s ease; /* Aqui acontece a mágica */
 }
 
+summary:hover{
+    color: #ffffff;
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+
+}
+
 /* Quando o details abre, a seta gira 90 graus */
 details[open] summary::after {
   transform: rotate(90deg);
@@ -326,3 +333,17 @@ details p {
     margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
 }
 
+
+
+a {
+    color: #000000;          /* Cor azul personalizada */
+    text-decoration: none;   /* Remove o sublinhado padrão */
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+}
+
+/* Quando o mouse passa por cima */
+a:hover {
+    color: #ffffff;          /* Muda para verde */
+    text-decoration: underline; 
+}
