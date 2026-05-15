@@ -1,93 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOBOT</title>
 
+    <link rel="stylesheet" href="hobbies_style.css">
 </head>
-<link rel = "stylesheet" href = "hobbies_style.css">
 
+<body>
 
+    <!-- TOPO -->
+    <div class="box1">
 
-</body>
+        <h1 class="titulo_principal">HOBOT</h1>
 
+        <h3>área de hobbies</h3>
 
-<div class = "box1">
-    <h1 class="titulo_principal" >HOBOT</h1>
-    
-    <h3>area de hobbies </h3>
-         
+    </div>
 
-</div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo-principal">
 
-<div class="conteudo-principal"> 
-    <nav> 
-
-        <!--menu-->
+        <!-- MENU -->
         <div class="box2">
 
-
-            <!-- cabeçario do menu -->
             <div class="menu-header">
 
-                <!-- texto menu -->
                 <h2 class="menu_texto">MENU</h2>
+
             </div>
-            
 
             <div class="conteudo_menu_texto">
-          
-            
-            <details>
-                <summary>CROCHE</summary>
-                <p>
-                 
-                    EscEscreveremos um texto sobre a equipe aqui futuramente.
-                    Escreveremos um texto sobre a equipe aqui futuramente.
-                  reveremos  
-                  
-                 
-                </p>
-            </details>
 
-            
+                <details>
+
+                    <summary>CROCHÊ</summary>
+
+                    <!-- VIDEO 1 -->
+                    <p onclick="trocarVideo('https://www.youtube.com/embed/ZQM1GS3uDz8')">
+                        VIDEO 1
+                    </p>
+                    <!-- VIDEO 2 -->
+                    <p onclick="trocarVideo('https://www.youtube.com/embed/xoWxv2yZXLQ')">
+                        VIDEO 2
+                    </p>
+
+                    <!-- VIDEO 3 -->
+                    <p onclick="trocarVideo('https://www.youtube.com/embed/TcMBFSGVi1c')">
+                        VIDEO 3
+                    </p>
+
+                </details>
 
             </div>
 
         </div>
-    
+
+        <!-- ÁREA DO VIDEO -->
+        <div class="area-video">
+
+            <iframe
+                id="playerVideo"
+                src=""
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
     </div>
 
-
-   
-    
-   
-      
-      <span onclick="abrirVideo()" style="color: blue; cursor: pointer;">
-        vídeo
-      </span>
-    </p>
-    
-    <div id="video">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-    
+    <!-- JAVASCRIPT -->
     <script>
-    function abrirVideo() {
-      document.getElementById("video").style.display = "block";
-    }
+
+        function trocarVideo(linkVideo) {
+
+            document.getElementById("playerVideo").src = linkVideo;
+
+        }
+
     </script>
-    
-    </body>
-    </html>
 
+</body>
 
-
-
-html>
 </html>
