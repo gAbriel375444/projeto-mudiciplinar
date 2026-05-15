@@ -14,4 +14,174 @@ body{
     overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
  }
 
+
+.box1{
+    text-align: center;
+
+    border: 1px, solid, black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
+
+    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
+   
+
+    /* background-color: #d0c9f9; */
+
+    color: rgb(13, 13, 14);text-align: center;
+
+    border: 1px, solid, black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
+
+    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
+   
+
+    /* background-color: #d0c9f9; */
+
+    color: rgb(13, 13, 14);
+}
+
+
+
+/* MENU */
+.box2{
+
+  
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 1px 15px 15px 1px;
+    display: flex;
+    flex-direction: column; /* Organiza um em cima do outro */
+    overflow: hidden;       /* Impede que a borda principal role */
+    padding: 0;             /* Remove o padding daqui para não sobrar espaço branco */
+    background: linear-gradient(270deg, rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%);
+
+    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
  
+
+    -ms-overflow-style: none;  /* IE e Edge antigo */
+    scrollbar-width: none;     /* Firefox */
+        
+
+    color: rgb(0, 0, 0); /*cor da fonte*/
+}
+
+
+/* Esconde a barra para Chrome, Safari e novas versões do Edge */
+/* O seletor de esconder a barra deve ficar separado assim: */
+.box2::-webkit-scrollbar {
+    display: none;
+}
+
+.box2 {
+    width: 250px;   /* Largura do seu menu lateral */
+    flex-shrink: 0; /* Impede o menu de ser "esmagado" */
+}
+
+/* Parte de cima (Fixa) */
+.menu-header {
+    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
+    padding: 10px;
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* texto "menu" */
+.menu_texto{
+
+    
+    color: rgb(0, 0, 0);
+    margin-left: 75px;
+}
+
+/* sobre, hobbys, etc 
+parte de baixo*/
+.conteudo_menu_texto{
+
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 20px; /* Dá um espaço acima do sobre nós */
+}
+
+
+
+/* controla o sobre nós
+tranforma em um sumário, ou seja,
+se clicar abre um texto */
+summary {
+  list-style: none; /* Esconde a seta padrão */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Necessário para navegadores antigos/Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* cria um espaço vazio antes do sumário */
+summary::after {
+  content: '▶'; /* preenche o espaço vazio com o triangulo */
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease; /* Aqui acontece a mágica */
+}
+
+summary:hover{
+    color: #ffffff;
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+
+}
+
+/* Quando o details abre, a seta gira 90 graus */
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+/* personalizando o texto do sobre (menu) */
+details p {
+
+    
+    top: 50px;
+    max-height: 200px;    /*Define a altura máxima antes de aparecer a barra */
+    overflow-y: auto;     /* Cria a barra de rolagem vertical se o texto for grande */
+    padding: 10px;        /* Espaço interno para o texto não colar na borda */
+    border: 1px solid #330264; /* Opcional: apenas para delimitar a área do texto */
+    /* background: #eed4ff;     Opcional: fundo branco para o texto */
+    background: linear-gradient(90deg,rgba(201, 153, 255, 1) 18%, rgba(228, 217, 255, 1) 73%);
+
+
+    margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
+}
+
+
+
+a {
+    position: relative;
+    top: 10px;
+    color: #000000;          /* Cor azul personalizada */
+    text-decoration: none;   /* Remove o sublinhado padrão */
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+}
+
+/* Quando o mouse passa por cima */
+a:hover {
+    color: #ffffff;          /* Muda para verde */
+    text-decoration: underline; 
+}
