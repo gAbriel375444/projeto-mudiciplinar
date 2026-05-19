@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
     // Dispara o desabafo para os computadores do Google processarem a resposta
     const response = await ai.models.generateContent({
-      model: 'gemini-1.5-flash', // Modelo ideal para chats: super rápido e gratuito/barato
+      model: 'gemini-2.5-flash', // Modelo ideal para chats: super rápido e gratuito/barato
       config: {
         // [PROMPT]: As regras de comportamento e psicologia do seu robô Hobot
         systemInstruction: `Você é o Hobot, um assistente virtual focado em apoio emocional e bem-estar mental. 
