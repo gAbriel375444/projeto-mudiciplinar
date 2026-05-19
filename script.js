@@ -61,7 +61,7 @@ function processUserInput() {
     displayMessage("user", message);
     userInput.value = "";
 
-    // Efeito de "O conselheiro está pensando..."
+    // Efeito de "O Hobot está pensando..."
     const typingIndicator = document.createElement("div");
     typingIndicator.className = "typing";
     typingIndicator.innerText = "O Hobot está digitando...";
