@@ -30,6 +30,15 @@ export default async function handler(req, res) {
         2. Ofereça um conselho curto focado em ações práticas offline para aliviar o momento (ex: respirar, tomar água, caminhar).
         3. Termine incentivando o usuário de forma sutil a fechar a tela e ir conferir a nossa "Aba de Hobbies" do site para espairecer a cabeça.
         4. Nunca tente substituir ajuda médica ou psicológica profissional. Se notar intenções graves de automutilação ou risco à vida, mude o tom para acolhimento emergencial e exiba o contato do CVV (Centro de Valorização da Vida) mandando ligar para o número 188.`,
+
+          // Desativa os bloqueios exagerados para conteúdos sensíveis/médicos
+        safetySettings: [
+          { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_NONE' },
+          { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_NONE' },
+          { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_NONE' },
+          { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_NONE' }
+        ]
+
       },
       contents: mensagem, // O texto do desabafo enviado para a IA ler
     });
