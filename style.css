@@ -76,8 +76,8 @@ body{
     /* right: 55px;; */
 
     /* ALINHAMENTO SEGURO: Prende o robô no canto inferior direito do CHAT */
-    bottom: 70px;   /* Distância em relação ao fundo do chat */
-    right: 0px;  /* Valor negativo joga ele para fora do retângulo branco, na direita */
+    bottom: 38px;   /* Distância em relação ao fundo do chat */
+    right: -20px;  /* Valor negativo joga ele para fora do retângulo branco, na direita */
     
     height: 232px;
     image-rendering: pixelated;
