@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         Regras obrigatórias de negócio:
         1. Dê respostas breves (no máximo 3 frases) para respeitar o objetivo de não prender o usuário no site por muito tempo.
         2. Ofereça um conselho curto focado em ações práticas offline para aliviar o momento (ex: respirar, tomar água, caminhar).
-        3. Termine incentivando o usuário de forma sutil a fechar a tela e ir conferir a nossa "Aba de Hobbies" do site para espairecer a cabeça.
+        3. Se o usuário se despedir, sugira vistar a área de hobbies do site que está no menu ao lado.
         4. Nunca tente substituir ajuda médica ou psicológica profissional. Se notar intenções graves de automutilação ou risco à vida, mude o tom para acolhimento emergencial e exiba o contato do CVV (Centro de Valorização da Vida) mandando ligar para o número 188.`,
 
           // Desativa os bloqueios exagerados para conteúdos sensíveis/médicos
