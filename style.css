@@ -53,6 +53,7 @@ body{
 }
 
 #chat-container {
+    position: relative; /* OBRIGATÓRIO: Faz o robô se alinhar pelo chat, não pela tela inteira */
     flex-grow: 1;      /* O chat vai crescer até o final da tela */
     max-width: 910px;  /* Mas não vai ficar largo demais */
     background: white;
@@ -60,7 +61,9 @@ body{
     display: flex;
     flex-direction: column;
     height: 372px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* Mudamos de hidden para visible para que o robô possa "vazar" para fora do chat se você quiser */
+    overflow: visible; 
 }
 
 
@@ -68,8 +71,13 @@ body{
 /* Base do Robô - Aqui fica o que não muda nunca */
 .hobot {
     position: absolute;
-    top: 271px;
-    right: 55px;;
+    /* top: 271px; */
+    /* right: 55px;; */
+
+    /* ALINHAMENTO SEGURO: Prende o robô no canto inferior direito do CHAT */
+    bottom: 20px;   /* Distância em relação ao fundo do chat */
+    right: -130px;  /* Valor negativo joga ele para fora do retângulo branco, na direita */
+    
     height: 232px;
     image-rendering: pixelated;
     background-repeat: no-repeat;
