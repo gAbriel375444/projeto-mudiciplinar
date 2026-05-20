@@ -32,7 +32,7 @@ async function processUserInput() {
     // Cria o indicador visual de que o robô está processando a resposta
     const typingIndicator = document.createElement("div");
     typingIndicator.className = "typing";
-    typingIndicator.innerText = "O Hobot está pensando...";
+    typingIndicator.innerText = "O Hope está pensando...";
     chatOutput.appendChild(typingIndicator); // Joga o "está pensando..." na tela
     chatOutput.scrollTop = chatOutput.scrollHeight; // Rola a tela para baixo
 
