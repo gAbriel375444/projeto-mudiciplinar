@@ -1,52 +1,49 @@
-body{
-
-    /* background-color: #46469d; */
-
-    /* background-image: linear-gradient(90deg,rgba(70, 70, 157, 1) 21%, rgba(122, 122, 194, 1) 100%); */
+    body{
 
     background: url(animacoes_e_imagens/prototipo-fundo-hobot.png);
+
     background-size: cover;
-    image-rendering: pixelated; /* Mantém os pixels nítidos em navegadores modernos */
-    image-rendering: crisp-edges; /* Alternativa para outros navegadores */
 
-    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+    overflow-x: hidden;
 
-    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
- }
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 
 
+
+/* TOPO */
 .box1{
+
     text-align: center;
 
-    border: 1px, solid, black;
-
     padding: 10px;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
+    border-bottom: 3px solid black;
 
-    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
-   
+    background: radial-gradient(circle,
+    rgba(123,0,255,1) 0%,
+    rgba(178,89,255,1) 77%);
 
-    /* background-color: #d0c9f9; */
+}
 
-    color: rgb(13, 13, 14);text-align: center;
 
-    border: 1px, solid, black;
 
-    padding: 10px;
+/* CONTEUDO */
+.conteudo-principal{
 
-    margin-bottom: 20px;
+    display: flex;
 
-    /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
+    gap: 40px;
 
-    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
-   
+    padding: 20px;
 
-    /* background-color: #d0c9f9; */
+    align-items: flex-start;
 
-    color: rgb(13, 13, 14);
 }
 
 
@@ -54,154 +51,194 @@ body{
 /* MENU */
 .box2{
 
-  
-    width: 250px;
-    height: 350px;
-    border: 5px solid black;
-    border-radius: 1px 15px 15px 1px;
-    display: flex;
-    flex-direction: column; /* Organiza um em cima do outro */
-    overflow: hidden;       /* Impede que a borda principal role */
-    padding: 0;             /* Remove o padding daqui para não sobrar espaço branco */
-    background: linear-gradient(270deg, rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%);
+    width: 300px;
 
-    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
-    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
- 
+    height: 700px;
 
-    -ms-overflow-style: none;  /* IE e Edge antigo */
-    scrollbar-width: none;     /* Firefox */
-        
+    overflow-y: auto;
 
-    color: rgb(0, 0, 0); /*cor da fonte*/
+    border: 4px solid black;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+    270deg,
+    rgba(208,201,249,1) 29%,
+    rgba(157,135,255,1) 100%);
+
 }
 
 
-/* Esconde a barra para Chrome, Safari e novas versões do Edge */
-/* O seletor de esconder a barra deve ficar separado assim: */
-.box2::-webkit-scrollbar {
-    display: none;
-}
 
-.box2 {
-    width: 250px;   /* Largura do seu menu lateral */
-    flex-shrink: 0; /* Impede o menu de ser "esmagado" */
-}
+/* MENU HEADER */
+.menu-header{
 
-/* Parte de cima (Fixa) */
-.menu-header {
-    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
+    background: radial-gradient(circle,
+    rgba(123,0,255,1) 0%,
+    rgba(178,89,255,1) 77%);
+
     padding: 10px;
-    height: 40px; 
-    display: flex;
-    align-items: center;
-    
+
+    text-align: center;
+
 }
 
 
-/* texto "menu" */
+
+/* TEXTO MENU */
 .menu_texto{
 
-    
-    color: rgb(0, 0, 0);
-    margin-left: 75px;
+    margin: 0;
+
 }
 
-/* sobre, hobbys, etc 
-parte de baixo*/
+
+
+/* CONTEUDO MENU */
 .conteudo_menu_texto{
 
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-    margin-top: 20px; /* Dá um espaço acima do sobre nós */
+    padding: 15px;
+
+}
+
+
+
+/* HOBBIES */
+details{
+
+    margin-bottom: 20px;
+
 }
 
 
 
-/* controla o sobre nós
-tranforma em um sumário, ou seja,
-se clicar abre um texto */
-summary {
-  list-style: none; /* Esconde a seta padrão */
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+/* TITULO HOBBY */
+summary{
 
-/* Necessário para navegadores antigos/Safari */
-summary::-webkit-details-marker {
-  display: none;
-}
+    cursor: pointer;
 
-/* cria um espaço vazio antes do sumário */
-summary::after {
-  content: '▶'; /* preenche o espaço vazio com o triangulo */
-  font-size: 12px;
-  margin-left: 7px;
-  transition: transform 0.3s ease; /* Aqui acontece a mágica */
-}
+    font-weight: bold;
 
-summary:hover{
-    color: #ffffff;
-    font-weight: bold;       /* Deixa o texto em negrito */
-    transition: 0.3s;        /* Suaviza as mudanças de cor */
+    margin-bottom: 10px;
+
+    font-size: 18px;
 
 }
 
-/* Quando o details abre, a seta gira 90 graus */
-details[open] summary::after {
-  transform: rotate(90deg);
-}
-
-/* personalizando o texto do sobre (menu) */
-details p {
-
-    
-    top: 50px;
-    max-height: 200px;    /*Define a altura máxima antes de aparecer a barra */
-    overflow-y: auto;     /* Cria a barra de rolagem vertical se o texto for grande */
-    padding: 10px;        /* Espaço interno para o texto não colar na borda */
-    border: 1px solid #330264; /* Opcional: apenas para delimitar a área do texto */
-    /* background: #eed4ff;     Opcional: fundo branco para o texto */
-    background: linear-gradient(90deg,rgba(201, 153, 255, 1) 18%, rgba(228, 217, 255, 1) 73%);
 
 
-    margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
+/* CARDS */
+.card-video{
+
+    background-color: white;
+
+    border: 2px solid purple;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
 }
 
 
 
-a {
-    position: relative;
-    top: 10px;
-    color: #000000;          /* Cor azul personalizada */
-    text-decoration: none;   /* Remove o sublinhado padrão */
-    font-weight: bold;       /* Deixa o texto em negrito */
-    transition: 0.3s;        /* Suaviza as mudanças de cor */
+/* HOVER */
+.card-video:hover{
+
+    background-color: #e5ccff;
+
+    transform: scale(1.02);
+
 }
 
-/* Quando o mouse passa por cima */
-a:hover {
-    color: #ffffff;          /* Muda para verde */
-    text-decoration: underline; 
-}
 
-.conteudo-principal{
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-}
 
+/* AREA VIDEO */
 .area-video{
+
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+
+    background-color: white;
+
+    border: 4px solid black;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
 }
 
+
+
+/* VIDEO */
 .area-video iframe{
-    width: 900px;
+
+    width: 100%;
+
     height: 500px;
-    border: 4px solid black;
-    border-radius: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* INFO VIDEO */
+.info-video{
+
+    margin-top: 20px;
+
+    background-color: #f2f2f2;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* TITULO */
+#tituloVideo{
+
+    margin-top: 0;
+
+}
+
+
+
+/* BOTAO */
+#linkCanal{
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    background-color: purple;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+}
+
+
+
+/* HOVER BOTAO */
+#linkCanal:hover{
+
+    background-color: rgb(98, 0, 128);
+
 }
