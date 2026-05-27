@@ -89,7 +89,7 @@ body{
 .hobot.idle {
     width: calc(5568px / 24); /* Exemplo: largura total / nº de quadros */
     background: url('animacoes_e_imagens/hobot_spr-Sheet-Idle.png');
-    animation: animar-idle 6s steps(24) infinite;
+    animation: animar-idle 3s steps(24) infinite;
 }
 
 /* Keyframes específicos para cada tira de imagem */
