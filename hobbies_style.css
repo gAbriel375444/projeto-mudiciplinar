@@ -1,6 +1,6 @@
     body{
 
-    background: url(animacoes_e_imagens/prototipo-fundo-hobot.png);
+    /* background: url(animacoes_e_imagens/prototipo-fundo-hobot.png);
 
     background-size: cover;
 
@@ -8,7 +8,16 @@
 
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
+
+    background: url(animacoes_e_imagens/prototipo-fundo-hobot.png);
+    background-size: cover;
+    image-rendering: pixelated; /* Mantém os pixels nítidos em navegadores modernos */
+    image-rendering: crisp-edges; /* Alternativa para outros navegadores */
+
+    overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+
+    overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
 
 }
 
