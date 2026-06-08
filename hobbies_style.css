@@ -60,7 +60,7 @@
 /* MENU */
 .box2{
 
-    width: 300px;
+    /* width: 300px;
 
     height: 700px;
 
@@ -73,7 +73,27 @@
     background: linear-gradient(
     270deg,
     rgba(208,201,249,1) 29%,
-    rgba(157,135,255,1) 100%);
+    rgba(157,135,255,1) 100%); */
+
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 1px 15px 15px 1px;
+    display: flex;
+    flex-direction: column; /* Organiza um em cima do outro */
+    overflow: hidden;       /* Impede que a borda principal role */
+    padding: 0;             /* Remove o padding daqui para não sobrar espaço branco */
+    background: linear-gradient(270deg, rgba(208, 201, 249, 1) 29%, rgba(157, 135, 255, 1) 100%);
+
+    overflow-y:         auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
+    overflow-x:         hidden; /* Evita que apareça barra de rolagem horizontal */
+ 
+
+    -ms-overflow-style: none;  /* IE e Edge antigo */
+    scrollbar-width:    none;     /* Firefox */
+        
+
+    color: rgb(0, 0, 0); /*cor da fonte*/
 
 }
 
