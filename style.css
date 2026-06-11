@@ -183,6 +183,7 @@ body{
     padding: 15px;
     box-sizing: border-box; /* Impede que a caixa saia do retângulo branco */
     background-color: white;
+    color-scheme: light;
 }
 
 /* Agora, faça o campo de texto crescer */
