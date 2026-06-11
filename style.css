@@ -177,6 +177,7 @@ body{
 
 
 /* Primeiro, garanta que a área que segura o input use 100% da largura do chat */
+/* caixa que o usuario vai digitar a mensagem e o botão de enviar */
 #input-area {
     display: flex;
     width: 100%;
