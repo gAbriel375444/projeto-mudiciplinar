@@ -183,6 +183,13 @@ body{
     padding: 15px;
     box-sizing: border-box; /* Impede que a caixa saia do retângulo branco */
     background-color: white;
+}
+
+#input-area input{
+
+    /* letras em azul */
+    color: #6b86f5;
+
     color-scheme: light;
 }
 
