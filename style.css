@@ -72,17 +72,14 @@ body{
 /* Base do Robô - Aqui fica o que não muda nunca */
 .hobot {
     position: absolute;
-    /* top: 271px; */
-    /* right: 55px;; */
-
-    /* ALINHAMENTO SEGURO: Prende o robô no canto inferior direito do CHAT */
-    bottom: 38px;   /* Distância em relação ao fundo do chat */
-    right: 0px;  /* Valor negativo joga ele para fora do retângulo branco, na direita */
-    
+    bottom: 38px;        /* Distância em relação ao fundo do chat */
+    right: 0px;          /* Valor negativo joga ele para fora do retângulo branco, na direita */
     height: 232px;
     image-rendering: pixelated;
     background-repeat: no-repeat;
     scale: 1.3;
+    pointer-events: none; /*passa os clicks que são feitos em cima do robô para os elementos debaixo dele
+    assim consigo clicar no botão de enviar mensagem.*/
 }
 
 /* Quando o robô estiver parado (IDLE) */
@@ -368,4 +365,65 @@ a {
 a:hover {
     color: #ffffff;          /* Muda para verde */
     text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    #chat-container {
+        width: 95%;
+        max-width: 95%;
+        height: 350px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    #chat-output {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+     .bot-msg {
+        max-width: 65% !important;
+        margin-right: 99px !important;  /* substitui o 200px do CSS base */
+        align-self: flex-end !important;
+    }
+
+
+    .user-msg {
+        max-width: 65% !important;
+        margin-left: 1px;
+    }
+
+    #meuRobo {
+        display: block;
+        scale: 0.8;
+        transform-origin: bottom right;
+        bottom: 23px;   /* sobe ele pra não cobrir o input */
+        right: -39px;
+    }
+
+    .foot {
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 }
