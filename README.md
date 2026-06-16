@@ -1,2 +1,1 @@
-Nomes dos integrantes do grupo:
-
+Nomes dos integrantes: Gabriel Silva Oliveira, Matheus Cardoso de Oliveira, Larissa Vitória Ribeiro Sousa, Gabriel Cardoso Miranda da Cunha, João Vitor Pereira Brito da Silva, Katharina Sertorio, Caique dos Santos Sotto e Daniel Mesaque Alauk da Cruz.
