@@ -76,6 +76,7 @@
     rgba(157,135,255,1) 100%); */
 
     margin-top: -5vh;
+    margin-left: -3.3vh;
     width: 250px;
     height: 350px;
     border: 1px solid black;
@@ -204,6 +205,9 @@ summary{
 
     padding: 20px;
 
+    height: 250px;
+
+
 }
 
 
@@ -233,6 +237,7 @@ summary{
     padding: 20px;
 
     border-radius: 10px;
+
 
 }
 
