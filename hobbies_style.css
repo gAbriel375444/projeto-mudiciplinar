@@ -60,21 +60,6 @@
 /* MENU */
 .box2{
 
-    /* width: 300px;
-
-    height: 700px;
-
-    overflow-y: auto;
-
-    border: 1px solid black;
-
-    border-radius: 15px;
-
-    background: linear-gradient(
-    270deg,
-    rgba(208,201,249,1) 29%,
-    rgba(157,135,255,1) 100%); */
-
     margin-top: -5vh;
     margin-left: -3.3vh;
     width: 250px;
@@ -108,7 +93,7 @@
     rgba(123,0,255,1) 0%,
     rgba(178,89,255,1) 77%);
 
-    padding: 10px;
+    padding: 16px;
 
     text-align: center;
 
