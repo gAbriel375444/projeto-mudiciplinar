@@ -129,7 +129,7 @@ details{
 
 
 /* TITULO HOBBY */
-summary{
+/* summary{
 
     cursor: pointer;
 
@@ -139,16 +139,88 @@ summary{
 
     font-size: 18px;
 
+} */
+
+
+
+/* controla o sobre nós
+tranforma em um sumário, ou seja,
+se clicar abre um texto */
+summary {
+  list-style: none; /* Esconde a seta padrão */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
+
+/* Necessário para navegadores antigos/Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* cria um espaço vazio antes do sumário */
+summary::after {
+  content: '▶'; /* preenche o espaço vazio com o triangulo */
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease; /* Aqui acontece a mágica */
+}
+
+summary:hover{
+    color: #ffffff;
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+
+}
+
+/* Quando o details abre, a seta gira 90 graus */
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+/* personalizando o texto do sobre (menu) */
+details p {
+
+    
+    top: 50px;
+    max-height: 200px;    /*Define a altura máxima antes de aparecer a barra */
+    overflow-y: auto;     /* Cria a barra de rolagem vertical se o texto for grande */
+    padding: 10px;        /* Espaço interno para o texto não colar na borda */
+    border: 1px solid #330264; /* Opcional: apenas para delimitar a área do texto */
+    /* background: #eed4ff;     Opcional: fundo branco para o texto */
+    background: linear-gradient(90deg,rgba(201, 153, 255, 1) 18%, rgba(228, 217, 255, 1) 73%);
+
+
+    margin-bottom: 1px; /* Isso dá espaço entre o título e o texto que vai abrir */
+}
+
+
+
+a {
+    position: relative;
+    top: 10px;
+    color: #000000;          /* Cor azul personalizada */
+    text-decoration: none;   /* Remove o sublinhado padrão */
+    font-weight: bold;       /* Deixa o texto em negrito */
+    transition: 0.3s;        /* Suaviza as mudanças de cor */
+}
+
+/* Quando o mouse passa por cima */
+a:hover {
+    color: #ffffff;          /* Muda para verde */
+    text-decoration: underline; 
+}
+
+
 
 
 
 /* CARDS */
 .card-video{
 
-    background-color: white;
+    background-color: rgba(212, 22, 254, 0.274);     
 
-    border: 1px solid purple;
+    border: 1px solid rgb(255, 255, 255);
 
     border-radius: 8px;
 
