@@ -289,7 +289,7 @@ a:hover {
 
     margin-top: 20px;
 
-    margin-left: -18px;
+    margin-left: -20px;
 
     width: 100%;
 
@@ -299,6 +299,7 @@ a:hover {
 
     border-radius: 10px;
 
+    border-color: #000000;
 
 }
 
