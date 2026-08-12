@@ -13,7 +13,9 @@ function displayMessage(role, text) {
     // Se for usuário, ganha a classe 'user-msg'. Se for o bot, ganha 'bot-msg' para o CSS estilizar diferente
     msgDiv.className = role === "user" ? "msg user-msg" : "msg bot-msg";
     
-    msgDiv.innerHTML = text; // Insere o texto dentro da div criada
+    // msgDiv.innerHTML = text; 
+
+    msgDiv.textContent = text; // trata tudo como texto puro, não como HTML e Insere o texto dentro da div criada
     chatOutput.appendChild(msgDiv); // Joga essa nova div dentro da área de mensagens do site
     chatOutput.scrollTop = chatOutput.scrollHeight; // Faz a rolagem da tela descer automaticamente
 }
