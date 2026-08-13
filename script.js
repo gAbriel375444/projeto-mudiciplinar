@@ -32,7 +32,7 @@ async function processUserInput() {
     if (!message) return; 
 
 
-    // trava o input assim que começa o processamento
+    // trava o input assim que começa o processamento //
     //impede que o usuário envie multiplas mensagens enquanto o Hobot pensa  
     userInput.disabled = true; 
       
