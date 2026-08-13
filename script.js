@@ -68,8 +68,6 @@ async function processUserInput() {
             body: JSON.stringify({ mensagem: message }) 
         });
 
-
-
         //  Transforma a resposta que chegou da internet em um objeto JavaScript legível
         const dados = await response.json();
 
