@@ -69,11 +69,6 @@ async function processUserInput() {
         });
 
 
-        //Verifica se o servidor respondeu com sucesso (status 200-299)
-        if (!response.ok) {
-            throw new Error(`Erro do servidor: ${response.status}`);
-        }
-
 
         //  Transforma a resposta que chegou da internet em um objeto JavaScript legível
         const dados = await response.json();
