@@ -341,3 +341,22 @@ a:hover {
     background-color: rgb(98, 0, 128);
 
 }
+
+.foot{
+    display:fixed;
+    padding: 50px;
+    position: center;
+    background-color: black;
+    margin-top: 156px;
+
+    height: 30px;
+
+}
+
+.contato{
+
+    color: aliceblue;
+
+    margin-top: -15px;
+    
+}
