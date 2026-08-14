@@ -73,8 +73,8 @@ async function processUserInput() {
         typingIndicator.remove(); 
 
         // Se a IA respondeu com sucesso, exibe o conselho dela na tela
-        if (dados.respostadaIA) {
-            displayMessage("bot", dados.respostadaIA);
+        if (dados.resposta_ia) {
+            displayMessage("bot", dados.resposta_ia);
         } else {
             // Caso aconteça algum bug na comunicação da IA, exibe uma desculpa
             displayMessage("bot", "Desculpe, tive um probleminha para processar isso agora. Pode repetir?");
