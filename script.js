@@ -2,8 +2,6 @@
 const chatOutput = document.getElementById("chat-output"); // A área onde os balões de mensagens aparecem
 const userInput = document.getElementById("user-input");   // A caixinha de texto onde o usuário digita
 
-const delay_boas_vindas_ms = 2000;
-
 /**
  * Função responsável por criar e exibir um balão de mensagem na tela.
  * @param {string} role - Quem está enviando ('user' para usuário, 'bot' para o Hobot)
@@ -75,8 +73,8 @@ async function processUserInput() {
         typingIndicator.remove(); 
 
         // Se a IA respondeu com sucesso, exibe o conselho dela na tela
-        if (dados.resposta_ia) {
-            displayMessage("bot", dados.resposta_ia);
+        if (dados.respostadaIA) {
+            displayMessage("bot", dados.respostadaIA);
         } else {
             // Caso aconteça algum bug na comunicação da IA, exibe uma desculpa
             displayMessage("bot", "Desculpe, tive um probleminha para processar isso agora. Pode repetir?");
@@ -104,5 +102,5 @@ userInput.addEventListener("keyup", (e) => {
 window.onload = () => {
     setTimeout(() => {
         displayMessage("bot", "Oi... percebi que você veio até aqui. Como está o seu coração hoje? Se quiser desabafar, sou todo ouvidos. ");
-    }, delay_boas_vindas_ms); // Diminuí para 2 segundos para o usuário não esperar tanto ao abrir o site
+    }, 2000); // Diminuí para 2 segundos para o usuário não esperar tanto ao abrir o site
 };
