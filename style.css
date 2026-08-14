@@ -31,8 +31,23 @@ body{
 
     /* background-color: #d0c9f9; */
 
+    color: rgb(13, 13, 14);text-align: center;
+
+    border: 1px, solid, black;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
+
+    background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
+   
+
+    /* background-color: #d0c9f9; */
+
     color: rgb(13, 13, 14);
-    }
+}
 
     
 
