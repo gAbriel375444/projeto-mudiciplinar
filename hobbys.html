@@ -8,372 +8,394 @@
 
     <title>Hobbies</title>
 
+    <!-- linka o css no html -->
     <link rel="stylesheet" href="hobbies_style.css">
 
 </head>
 
 <body>
 
-    <!-- TOPO -->
-    <div class="box1">
+    <!-- cabeçario -->
+    <header>
+        <!-- TOPO -->
+        <div class="box1">
 
-        <h1>HOBOT</h1>
+            <h1>HOBOT</h1>
 
-        <h3>Área de hobbies</h3>
+            <h3>Área de hobbies</h3>
 
-    </div>
+        </div>
+    </header>
 
+    <!-- conteúdo principal -->
+    <main>
+        <!-- CONTEUDO -->
+        <div class="conteudo-principal">
 
-    <!-- CONTEUDO -->
-    <div class="conteudo-principal">
+            <!-- area do menu/navegação -->
+            <nav>
+                <!-- MENU -->
+                <div class="box2">
 
+                    <div class="menu-header">
 
-        <!-- MENU -->
-        <div class="box2">
-
-            <div class="menu-header">
-
-                <h2 class="menu_texto">MENU</h2>
-
-            </div>
-
-
-            <div class="conteudo_menu_texto">
-
-
-                <!-- CROCHE -->
-                <details>
-
-                    <summary>CROCHÊ</summary>
-
-                    <!-- VIDEO 1 -->
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/ZQM1GS3uDz8',
-                    'Aprenda chochê do zero em 5 passos.',
-                    'Canal JNY Crochê',
-                    'Aprenda a fazer seu primeiro tapete.',
-                    'https://www.youtube.com/@jnycroche'
-                    )">
-
-                    Aprenda chochê do zero em 5 passos.
+                        <h2 class="menu_texto">MENU</h2>
 
                     </div>
 
+                
 
-                   
-                    <!-- VIDEO 2-->
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/pmppRw7TeZs',
-                    '4 itens básicos para começar a fazer crochê',
-                    'NaMaria ferreira',
-                    'Saiba os itens básicos para começar no crochê.',
-                    'https://www.youtube.com/@NaMariaFerreira',
-                    )">
-
-                        4 itens básicos para começar a fazer crochê.
-
-                    </div>
-
-                    <!-- VIDEO 3 -->
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/2lNVyCDeM40',
-                    'Tapete de crochê para iniciante.',
-                    'Canal JNY Crochê',
-                    'Aprenda como fazer tapetes fáceis e estilosos para sua casa.',
-                    'https://www.youtube.com/@jnycroche'
-                    )">
-
-                        Tapete de crochê para iniciante.
-
-                    </div>
-
-                </details>
+                    <!-- link dos videos, descrição, titulo, etc -->
+                    <div class="conteudo_menu_texto">
 
 
+                        <!-- CROCHE -->
+                        <details>
 
-                <!-- CALISTENIA -->
-                <details>
+                            <!-- Botão -->
+                            <summary>CROCHÊ</summary>
 
-                    <summary>CALISTENIA</summary>
+                            <!-- VIDEO 1 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            // video
+                            'https://www.youtube.com/embed/ZQM1GS3uDz8',
+                            // titulo
+                            'Aprenda chochê do zero em 5 passos.',
+                            //nome do canal
+                            'Canal JNY Crochê',
+                            //descrição
+                            'Aprenda a fazer seu primeiro tapete.',
+                            //nome do canal
+                            'https://www.youtube.com/@jnycroche'
+                            )">
 
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/wXeQDMRBQe0',
-                    'Calistenia para iniciantes: rotina completa para começar do zero!',
-                    'Gabriel Macileni',
-                    'Levante-se do sofá, e começe seus primeiros exércicios na calistenia com o gabriel Macileni.',
-                    'https://www.youtube.com/@gabrielmacineli',
-                    )">
+                            <!-- titulo do botão/card -->
+                            Aprenda chochê do zero em 5 passos.
 
-                        Calistenia para iniciantes: rotina completa para começar do zero!
-                    </div>
-
-
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/RJfJmtvKNRg',
-                    '3 movimentos iniciantes de calistenia para impressionar geral!',
-                    'Gabriel Macileni',
-                    'Aprenda a fazer movimentos básicos e fáceis da calistenia.',
-                     'https://www.youtube.com/@gabrielmacineli',
-                    )">
-
-                        3 movimentos iniciantes de calistenia para impressionar geral!
-
-                    </div>
+                            </div>
 
 
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/C00DC5bpJ9c',
-                    '3 movimentos de calistenia para impressionar geral!',
-                    'Gabriel Macileni',
-                    'Aprenda 3 movimentos mais dificeis para impressionar a si mesmo e aos seus amigos.',
-                    'https://www.youtube.com/@gabrielmacineli',
-                    )">
+                        
+                            <!-- VIDEO 2-->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/pmppRw7TeZs',
+                            '4 itens básicos para começar a fazer crochê',
+                            'NaMaria ferreira',
+                            'Saiba os itens básicos para começar no crochê.',
+                            'https://www.youtube.com/@NaMariaFerreira',
+                            )">
 
-                        3 movimentos de calistenia para impressionar geral!
+                                4 itens básicos para começar a fazer crochê.
 
-                    </div>
-                    
-                </details>
+                            </div>
+
+                            <!-- VIDEO 3 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/2lNVyCDeM40',
+                            'Tapete de crochê para iniciante.',
+                            'Canal JNY Crochê',
+                            'Aprenda como fazer tapetes fáceis e estilosos para sua casa.',
+                            'https://www.youtube.com/@jnycroche'
+                            )">
+
+                                Tapete de crochê para iniciante.
+
+                            </div>
+
+                        </details>
 
 
 
-                <!-- PINTURA -->
-                <details>
+                        <!-- CALISTENIA -->
+                        <details>
 
-                    <summary>PINTURA</summary>
+                            <summary>CALISTENIA</summary>
 
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/YMQUBs8FRTE',
-                    '5 dicas para começar a pintar',
-                    'Aumari jr artes',
-                    '5 dicas incríveis para você iniciante na pintura.',
-                    'https://www.youtube.com/@AmauriJrArtes',
-                    )">
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/wXeQDMRBQe0',
+                            'Calistenia para iniciantes: rotina completa para começar do zero!',
+                            'Gabriel Macileni',
+                            'Levante-se do sofá, e começe seus primeiros exércicios na calistenia com o gabriel Macileni.',
+                            'https://www.youtube.com/@gabrielmacineli',
+                            )">
 
-                        5 dicas para começar a pintar.
-
-                    </div>
-
-
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/8cb1i5Eg05U',
-                    'Materias minimos necessários para começar a pintar',
-                    'Aumari jr artes',
-                    'Materias iniciais e básicos para começar a fazer a sua arte.',
-                    'https://www.youtube.com/@AmauriJrArtes',
-                    )">
-
-                        Materias minimos necessários para começar a pintar.
-
-                    </div>
+                                Calistenia para iniciantes: rotina completa para começar do zero!
+                            </div>
 
 
-                    <div class="card-video"
-                    onclick="trocarVideo(
-                    'https://www.youtube.com/embed/170FOZdQ0YM',
-                    'Como iniciar na pintura em tela?',
-                    'Aumari jr artes',
-                    'Por onde você pode começar a pintar?',
-                    'https://www.youtube.com/@AmauriJrArtes',
-                    )">
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/RJfJmtvKNRg',
+                            '3 movimentos iniciantes de calistenia para impressionar geral!',
+                            'Gabriel Macileni',
+                            'Aprenda a fazer movimentos básicos e fáceis da calistenia.',
+                            'https://www.youtube.com/@gabrielmacineli',
+                            )">
 
-                        Como iniciar na pintura em tela? 
+                                3 movimentos iniciantes de calistenia para impressionar geral!
 
-                    </div>
+                            </div>
 
-                    </details>
+
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/C00DC5bpJ9c',
+                            '3 movimentos de calistenia para impressionar geral!',
+                            'Gabriel Macileni',
+                            'Aprenda 3 movimentos mais dificeis para impressionar a si mesmo e aos seus amigos.',
+                            'https://www.youtube.com/@gabrielmacineli',
+                            )">
+
+                                3 movimentos de calistenia para impressionar geral!
+
+                            </div>
+                            
+                        </details>
+
+
+
+                        <!-- PINTURA -->
+                        <details>
+
+                            <summary>PINTURA</summary>
+
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/YMQUBs8FRTE',
+                            '5 dicas para começar a pintar',
+                            'Aumari jr artes',
+                            '5 dicas incríveis para você iniciante na pintura.',
+                            'https://www.youtube.com/@AmauriJrArtes',
+                            )">
+
+                                5 dicas para começar a pintar.
+
+                            </div>
+
+
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/8cb1i5Eg05U',
+                            'Materias minimos necessários para começar a pintar',
+                            'Aumari jr artes',
+                            'Materias iniciais e básicos para começar a fazer a sua arte.',
+                            'https://www.youtube.com/@AmauriJrArtes',
+                            )">
+
+                                Materias minimos necessários para começar a pintar.
+
+                            </div>
+
+
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/170FOZdQ0YM',
+                            'Como iniciar na pintura em tela?',
+                            'Aumari jr artes',
+                            'Por onde você pode começar a pintar?',
+                            'https://www.youtube.com/@AmauriJrArtes',
+                            )">
+
+                                Como iniciar na pintura em tela? 
+
+                            </div>
+
+                        </details>
 
 
 
                         <!-- VIOLAO -->
-                    <details>
+                        <details>
 
-                     <summary>VIOLÃO</summary>
+                            <summary>VIOLÃO</summary>
 
-                       <!-- VIDEO 1 -->
-                     <div class="card-video"
-                     onclick="trocarVideo(
-                     'https://www.youtube.com/embed/2TD3u30oQtM',
-                     'Primeira aula de violão para iniciantes.',
-                     'Paula Sousa',
-                     'Aprenda o básico sobre o violão com o professor Paulo Sousa, que com poucos minutos de vídeos irá te ensinar sua primeira musica!',
-                     'https://www.youtube.com/@paulosousaviolao',
-                     )">
+                            <!-- VIDEO 1 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/2TD3u30oQtM',
+                            'Primeira aula de violão para iniciantes.',
+                            'Paula Sousa',
+                            'Aprenda o básico sobre o violão com o professor Paulo Sousa, que com poucos minutos de vídeos irá te ensinar sua primeira musica!',
+                            'https://www.youtube.com/@paulosousaviolao',
+                            )">
 
-                        Primeira aula de violão para iniciantes.
+                                Primeira aula de violão para iniciantes.
 
-                      </div>
-
-
-                        <!-- VIDEO 2 -->
-                     <div class="card-video"
-                     onclick="trocarVideo(
-                     'https://www.youtube.com/embed/kCieI6r_yd0',
-                     'Como escolher o melhor violão para iniciantes.',
-                     'Sidimar Autoni. ', 
-                     'Qual violão devo comprar sendo iniciante? 🤔Sidimar Autoni irá te ajudar com isso. ',
-                     'https://www.youtube.com/@SidimarAntunes'
-                     )">
-
-                            Como escolher o melhor violão para iniciantes.
-
-                      </div>
+                            </div>
 
 
-                         <!-- VIDEO 3 -->
-                     <div class="card-video"
-                     onclick="trocarVideo(
-                     'https://www.youtube.com/embed/2Rsz3JEbw0Y',
-                     'Como tocar violão, sua primeira musica.',
-                     'Cifra club.',
-                     'Sua primeira musica no violão: Aprenda isso e muito mais com o Gustavo Fofão!',
-                     'https://www.youtube.com/@cifraclub'
-                     )">
+                            <!-- VIDEO 2 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/kCieI6r_yd0',
+                            'Como escolher o melhor violão para iniciantes.',
+                            'Sidimar Autoni. ', 
+                            'Qual violão devo comprar sendo iniciante? 🤔Sidimar Autoni irá te ajudar com isso. ',
+                            'https://www.youtube.com/@SidimarAntunes'
+                            )">
 
-                        Como tocar vialão, sua primeira música.
+                                    Como escolher o melhor violão para iniciantes.
 
-                     </div>
-
-                          
-                     </details>
+                            </div>
 
 
-                       <!-- LEITURA -->
-                     <details>
+                                <!-- VIDEO 3 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/2Rsz3JEbw0Y',
+                            'Como tocar violão, sua primeira musica.',
+                            'Cifra club.',
+                            'Sua primeira musica no violão: Aprenda isso e muito mais com o Gustavo Fofão!',
+                            'https://www.youtube.com/@cifraclub'
+                            )">
 
-                     <summary>LEITURA</summary>
+                                Como tocar vialão, sua primeira música.
 
-                       <!-- VIDEO 1 -->
-                     <div class="card-video"
-                      onclick="trocarVideo(
-                     'https://www.youtube.com/embed/oEe1t5P9XB4',
-                     'Como nos tornamos leitores.',
-                     'Tatifeltrin',
-                     'Por onde começar na leitura?',
-                     'https://www.youtube.com/@tatifeltrin'
-                       )">
+                            </div>
 
-                      Como nos tornamos leitores?
-
-                     </div>
+                                
+                        </details>
 
 
-                     <!-- VIDEO 2 -->
-                     <div class="card-video"
-                       onclick="trocarVideo(
-                     'https://www.youtube.com/embed/ZZTVePdKZdk',
-                     'Livros para ler em um dia.',
-                     'Tatifeltrin',
-                     'Livros fácieis curtos para começar na leitura.',
-                      'https://www.youtube.com/@tatifeltrin'
-                      )">
+                        <!-- LEITURA -->
+                        <details>
 
-                           Livros para ler em um dia.
+                            <summary>LEITURA</summary>
 
-                     </div>
+                            <!-- VIDEO 1 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/oEe1t5P9XB4',
+                            'Como nos tornamos leitores.',
+                            'Tatifeltrin',
+                            'Por onde começar na leitura?',
+                            'https://www.youtube.com/@tatifeltrin'
+                            )">
+
+                            Como nos tornamos leitores?
+
+                            </div>
 
 
-                        <!-- VIDEO 3 -->
-                     <div class="card-video"
-                     onclick="trocarVideo(
-                     'https://www.youtube.com/embed/dLF4JHA-Lpc',
-                     'O Pequeno Príncipe (Antoine Saint-Exupéry).',
-                     'Tatifeltrin.',
-                     'indicando livros.',
-                    'https://www.youtube.com/@tatifeltrin'
-                 )">
+                            <!-- VIDEO 2 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/ZZTVePdKZdk',
+                            'Livros para ler em um dia.',
+                            'Tatifeltrin',
+                            'Livros fácieis curtos para começar na leitura.',
+                            'https://www.youtube.com/@tatifeltrin'
+                            )">
 
-                   O Pequeno Príncipe (Antoine Saint-Exupéry).
+                                Livros para ler em um dia.
 
-                   </div>
+                            </div>
 
-                 </details>
+
+                                <!-- VIDEO 3 -->
+                            <div class="card-video"
+                            onclick="trocarVideo(
+                            'https://www.youtube.com/embed/dLF4JHA-Lpc',
+                            'O Pequeno Príncipe (Antoine Saint-Exupéry).',
+                            'Tatifeltrin.',
+                            'indicando livros.',
+                            'https://www.youtube.com/@tatifeltrin')">
+
+                            O Pequeno Príncipe (Antoine Saint-Exupéry).
+
+                            </div>
+
+                        </details>
+
+                    <!-- conteúdo_menu_texto -->
+                    </div>
+                </div>
+            <!-- fechando o nav  -->
+            </nav>
+
+        
+        <!-- </div> -->
+
+
+
+            <!-- AREA VIDEO -->
+            <div class="area-video">
+
+                <iframe
+                id="playerVideo"
+                src=""
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
+
+
+                <!-- INFO -->
+                <div class="info-video">
+
+                    <h2 id="tituloVideo">
+
+                        Nenhum vídeo selecionado
+
+                    </h2>
+
+
+                    <p id="canalVideo">
+
+                        Canal:
+
+                    </p>
+
+
+                    <p id="descricaoVideo">
+
+                        Descrição do vídeo
+
+                    </p>
+
+
+                    <a
+                    id="linkCanal"
+                    href="#"
+                    target="_blank">
+
+                        Ir para o canal
+
+                    </a>
+
+                </div>
+
+            <!--fecha a area de video -->
             </div>
 
+        <!-- fecha o conteúdo principal -->
         </div>
 
 
 
-        <!-- AREA VIDEO -->
-        <div class="area-video">
+        <!-- SCRIPT -->
+        <script>
 
-            <iframe
-            id="playerVideo"
-            src=""
-            frameborder="0"
-            allowfullscreen>
-            </iframe>
+            function trocarVideo(video, titulo, canal, descricao, link){
 
+                document.getElementById("playerVideo").src = video;
 
-            <!-- INFO -->
-            <div class="info-video">
+                document.getElementById("tituloVideo").innerText = titulo;
 
-                <h2 id="tituloVideo">
+                document.getElementById("canalVideo").innerText =
+                "Canal: " + canal;
 
-                    Nenhum vídeo selecionado
+                document.getElementById("descricaoVideo").innerText =
+                descricao;
 
-                </h2>
+                document.getElementById("linkCanal").href = link;
 
+            }
 
-                <p id="canalVideo">
-
-                    Canal:
-
-                </p>
-
-
-                <p id="descricaoVideo">
-
-                    Descrição do vídeo
-
-                </p>
-
-
-                <a
-                id="linkCanal"
-                href="#"
-                target="_blank">
-
-                    Ir para o canal
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- SCRIPT -->
-    <script>
-
-        function trocarVideo(video, titulo, canal, descricao, link){
-
-            document.getElementById("playerVideo").src = video;
-
-            document.getElementById("tituloVideo").innerText = titulo;
-
-            document.getElementById("canalVideo").innerText =
-            "Canal: " + canal;
-
-            document.getElementById("descricaoVideo").innerText =
-            descricao;
-
-            document.getElementById("linkCanal").href = link;
-
-        }
-
-    </script>
-
+        </script>
+    </main>
 </body>
 </html>
