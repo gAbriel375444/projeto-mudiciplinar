@@ -44,7 +44,7 @@ export default async function handler(req, res) {
     });
 
     // Se tudo deu certo, devolve o texto gerado pelo Gemini com o status HTTP 200 (Sucesso)
-    return res.status(200).json({ respostadaIA: response.text });
+    return res.status(200).json({ resposta_ia: response.text });
 
   } catch (error) {
     // Se o Google Gemini cair ou houver erro na chave de API, exibe o erro no painel da Vercel

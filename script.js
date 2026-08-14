@@ -1,6 +1,13 @@
 // Captura os elementos HTML da tela para podermos mexer neles via JavaScript
-const chatOutput = document.getElementById("chat-output"); // A área onde os balões de mensagens aparecem
-const userInput = document.getElementById("user-input");   // A caixinha de texto onde o usuário digita
+
+// A área onde os balões de mensagens aparecem
+const chatOutput = document.getElementById("chat-output"); 
+
+// A caixinha de texto onde o usuário digita
+const userInput = document.getElementById("user-input");   
+
+// Salva o valor do delay das mensagens de boas vindas 
+const delay_boas_vindas_ms = 2000;
 
 /**
  * Função responsável por criar e exibir um balão de mensagem na tela.
@@ -8,22 +15,27 @@ const userInput = document.getElementById("user-input");   // A caixinha de text
  * @param {string} text - O texto da mensagem
  */
 function displayMessage(role, text) {
-    const msgDiv = document.createElement("div"); // Cria uma tag <div> nova na memória
+
+    // Cria uma tag <div> nova na memória
+    const msgDiv = document.createElement("div"); 
     
     // Se for usuário, ganha a classe 'user-msg'. Se for o bot, ganha 'bot-msg' para o CSS estilizar diferente
     msgDiv.className = role === "user" ? "msg user-msg" : "msg bot-msg";
     
-    // msgDiv.innerHTML = text; 
 
-    msgDiv.textContent = text; // trata tudo como texto puro, não como HTML e Insere o texto dentro da div criada
-    chatOutput.appendChild(msgDiv); // Joga essa nova div dentro da área de mensagens do site
-    chatOutput.scrollTop = chatOutput.scrollHeight; // Faz a rolagem da tela descer automaticamente
+    // trata tudo como texto puro, não como HTML e Insere o texto dentro da div criada
+    msgDiv.textContent = text; 
+
+    // Joga essa nova div dentro da área de mensagens do site
+    chatOutput.appendChild(msgDiv); 
+
+    // Faz a rolagem da tela descer automaticamente
+    chatOutput.scrollTop = chatOutput.scrollHeight; 
 }
 
-/**
- * Função principal que processa o envio do usuário.
- * Usamos "async" porque ela vai fazer uma requisição na internet que demora alguns segundos para responder.
- */
+
+//Função principal que processa o envio do usuário.
+//Usamos "async" porque ela vai fazer uma requisição na internet que demora alguns segundos para responder. 
 async function processUserInput() {
 
     // Pega o que foi digitado e remove espaços inúteis do início/fim
@@ -32,7 +44,7 @@ async function processUserInput() {
     if (!message) return; 
 
 
-    // trava o input assim que começa o processamento //
+    // trava o input assim que começa o processamento 
     //impede que o usuário envie multiplas mensagens enquanto o Hobot pensa  
     userInput.disabled = true; 
       
@@ -102,5 +114,5 @@ userInput.addEventListener("keyup", (e) => {
 window.onload = () => {
     setTimeout(() => {
         displayMessage("bot", "Oi... percebi que você veio até aqui. Como está o seu coração hoje? Se quiser desabafar, sou todo ouvidos. ");
-    }, 2000); // Diminuí para 2 segundos para o usuário não esperar tanto ao abrir o site
+    }, delay_boas_vindas_ms); // Diminuí para 2 segundos para o usuário não esperar tanto ao abrir o site
 };
