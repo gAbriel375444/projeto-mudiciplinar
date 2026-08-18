@@ -46,7 +46,7 @@ body{
 
     /* background-color: #d0c9f9; */
 
-    color: rgb(13, 13, 14);
+    color: rgb(255, 255, 255);
 }
 
     
@@ -273,7 +273,7 @@ button {
     scrollbar-width: none;     /* Firefox */
         
 
-    color: rgb(0, 0, 0); /*cor da fonte*/
+    color: #000000; /*cor da fonte*/
 }
 
 
@@ -299,7 +299,7 @@ button {
 .menu_texto{
 
     
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 75px;
 }
 
