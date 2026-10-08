@@ -170,6 +170,9 @@ body{
     max-width: 80%;
     padding: 10px 15px;
     border-radius: 18px;
+    
+    font-family: "Geist Pixel", sans-serif;
+
     font-size: 14px;
     word-wrap: break-word; /* Evita que o texto saia do retângulo */
 }
@@ -258,6 +261,8 @@ button {
     
     display: inline-block;   /* Garante que o balão só tenha o tamanho do texto */
     max-width: fit-content;
+
+    font-family: "Geist Pixel", sans-serif;
 }
 
 
