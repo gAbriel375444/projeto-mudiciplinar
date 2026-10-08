@@ -12,8 +12,10 @@ body{
     overflow-y: auto;  /* MÁGICA: Cria uma barra de rolagem se o conteúdo crescer */
 
     overflow-x: hidden; /* Evita que apareça barra de rolagem horizontal */
- }
 
+    font-family: "Geist Pixel", sans-serif;
+ }
+ 
 .box{
 
     text-align: center;
@@ -27,7 +29,7 @@ body{
     /* background-image: linear-gradient(334deg,rgba(208, 201, 249, 1) 45%, rgba(157, 135, 255, 1) 100%);  */
 
     background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
-   
+
 
     /* background-color: #d0c9f9; */
 
@@ -44,9 +46,19 @@ body{
     background: radial-gradient(circle,rgba(123, 0, 255, 1) 0%, rgba(178, 89, 255, 1) 77%);
    
 
+    font-family: "Geist Pixel", sans-serif;
+
+    
+
+    font-weight: 400;
+
+
     /* background-color: #d0c9f9; */
 
     color: rgb(255, 255, 255);
+
+
+    
 }
 
     
@@ -60,11 +72,15 @@ body{
     gap: 40px;                   /* Espaço entre o menu e o chat */
     padding-left: 0px;          /* Espaço da borda esquerda da tela */
     width: 100%;
+
+    font-family: "Geist Pixel", sans-serif;
 }
 
 .box2 {
     width: 250px;   /* Largura do seu menu lateral */
     flex-shrink: 0; /* Impede o menu de ser "esmagado" */
+
+    font-family: "Geist Pixel", sans-serif;
 }
 
 #chat-container {
